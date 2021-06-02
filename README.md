@@ -23,8 +23,9 @@ public verification of the knowledge base, and  to allow for a publicly accessib
 hosting the decision tree tool used to navigate the knowledge base.
 
 The current master database is stored in master-benchmark_updated_translated_v0.90.csv
-It contains both the Japanese and the English versions of the tree.
-The first column is Japanese, and the second is English. The third is notes.
+
+The database contains both the Japanese and the English versions of the tree.
+The first column is Japanese, and the second is English. The third (and beyond) is for notes.
 
 xlsx_to_json.py is used to convert the csv knowledge base to JSONs
 
@@ -36,8 +37,9 @@ program file, to convert the knowledge base csv into English and Japanese jsons,
 which are placed in graph_server/www/data/
 
 The current incarnation of the visualization tool is based on cytoscape and flask.
-The knowledge base files are hard-coded into graph_server/www/app.py and graph_server/www/graph.py
-Currently this needs to be manually changed if the file names are changed.
+The knowledge base file names are hard-coded into graph_server/www/app.py and graph_server/www/graph.py
+
+Currently these file names need to be manually changed if the file names are changed.
 
 Currently the files used have the name:
 eng_labeled_benchmark.json for the English version of the tool
