@@ -1,0 +1,9 @@
+web:
+  build: ./www
+  ports:
+    - "5000:5000"
+  volumes:
+    - ./www:/usr/www/
+  working_dir: /usr/www/
+  command:
+    - /usr/www/run.sh

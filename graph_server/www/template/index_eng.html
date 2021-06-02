@@ -1,0 +1,48 @@
+<!DOCTYPE>
+<html>
+  <head>
+    <title>Ethics Benchmark</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
+    <link href="static/css/style.css" rel="stylesheet" />
+    <script src="static/js/cytoscape.min.js"></script>
+    <script src="static/js/dagre.min.js"></script>
+    <script src="static/js/cytoscape-dagre.js"></script>
+    
+    <script src="https://unpkg.com/popper.js"></script>
+	<script src="static/js/cytoscape-popper.js"></script>
+    <script src="static/js/tooltips.js"></script>
+	<script src="https://unpkg.com/tippy.js@2.0.9/dist/tippy.all.js"></script>
+
+	<link rel="stylesheet" href="https://unpkg.com/tippy.js@2.0.9/dist/tippy.css" />
+    
+  </head>
+  <body>
+    <div class="header">
+        <h1>Ethics Benchmark &emsp; 
+        <a href="https://bit.ly/2L4oDZh" target="_blank">Google Form</a> &emsp; 
+        <a href="/info" target="_blank">Background Materials</a> &emsp; 
+        <a href="https://tinyurl.com/y884uz5a" target="_blank">Tutorial Video</a>&emsp; 
+        <a href="/raw" target="_blank">JSON(日本語)</a>&emsp; 
+        <a href="/raw_eng" target="_blank">JSON(English)</a>&emsp;
+        <a href="/" target="_self">決定木の日本語版</a></h1>
+        <a id="version"></a>
+    </div>
+    <div id="lists">
+      <select id="list1" onChange="changeList2()">
+      </select>
+      <select id="list2" onchange="getGraphScript()">
+      </select>
+    </div>    
+
+    <div id="cy"></div>
+    <script id='changeLists'></script>
+    <script>d = new Date(); var time = d.getTime();
+    var vers = document.getElementById("changeLists");
+    vers.src = "static/js/changeLists.js?version=" + time;
+    var vers_text = document.getElementById("version");
+    vers_text.innerHTML = "v0.45." + time.toString().substring(0,3);</script>
+    <div id="graphScript"></div>
+  </body>
+</html>
+
+

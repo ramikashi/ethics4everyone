@@ -1,0 +1,1351 @@
+{
+"Category": {
+"SE(ソフトウェア解析)": {
+"SE:VR(脆弱性研究)": {
+"脆弱性/攻撃調査やエクスプロイトの実行": {
+"Properties": ["Condition"],
+"公開されていないプロトコルや仕様(暗号化手法含む)を対象とするとき" : {
+"参照": {
+"Garman": "Dancing on the Lip of the Volcano: Chosen Ciphertext Attacks on Apple IMessage"
+},
+"デフォルト": "グレー"
+},
+"オープンソースを対象とするとき": {
+"参照": {
+"Bhargavan": "On the Practical (In-)Security of 64-Bit Block Ciphers",
+"Bianchi": "What the App Is That?",
+"Biryukov": "Trawling for Tor Hidden Services",
+"Bittau": "Hacking Blind",
+"Buyukkayhan": "CrossFire",
+"Cao": "Off-Path TCP Exploits",
+"Grubbs": "Breaking Web Applications Built On Top of Encrypted Data",
+"Irazoqui": "Know Thy Neighbor",
+"Shaik": "Practical Attacks Against Privacy and Availability in 4G/LTE Mobile Communication Systems",
+"Wang": "Call Me Back!"
+},
+"同意が得られていること　(例：利用規約に準拠、バグバウンティ、直接的な同意等)": "非倫理的ではない",
+"明白な同意がないこと　(例：事前通知を行っていない場合等)": "非倫理的ではない",
+"利用規約やライセンスに違反していること　(例：利用規約を破っている場合、直接的な同意がない場合等)": "グレー"
+},
+"非オープンソースの実装を対象とするとき": {
+"参照": {
+"Deshotels": "SandScout"
+},
+"同意が得られていること (例：利用規約に準拠、バグバウンティ、直接的な同意等)": "非倫理的ではない",
+"明白な同意がないこと (例：事前通知を行っていない場合等)": "禁止",
+"利用規約やライセンスに違反していること (例：利用規約を破っている場合、直接的な同意がない場合等)": "禁止"
+}
+}
+},
+"SE:RE(リバースエンジニアリング)": {
+"Properties": ["Condition"],
+"参照": {
+"EFF": "https://www.eff.org/issues/coders/reverse-engineering-faq",
+"Japan Law": "Copyright Act, Design Act"
+},
+"同意が得られていること": {
+"参照": {
+"Bao": "ByteWeight",
+"Jang": "Towards Automatic Software Lineage Inference"
+},
+"デフォルト": "非倫理的ではない"
+},
+"明白な同意がないこと": {
+"参照": {
+"Deshotels": "SandScout",
+"Eshete": "EKHunter"
+},
+"プロトコルや仕様が公開されていない(暗号化手法含む)": {
+"参照": {
+"Garman": "Dancing on the Lip of the Volcano: Chosen Ciphertext Attacks on Apple IMessage"
+},
+"デフォルト": "グレー"
+},
+"デフォルト": "グレー"
+},
+"利用規約やライセンス等を違反していること": {
+"参照": {
+"U.S Law": "DMCA",
+"TechCrunch": "Apple Announces Long-Awaited Bug Bounty Program",
+"Christie": "Maximising Permissible Exceptions to Intellectual Property Rights",
+"Wikipedia": "https://en.wikibooks.org/wiki/Reverse_Engineering/Legal_Aspects",
+"Gilbert-Macmillan": "Intellectual Property Law for Reverse Engineering Computer Programs in the European Community",
+"EU Law": "EU Directive 2009/24"
+},
+"ただし相互運用性のためにやむを得ないとき": "非倫理的ではない",
+"ただし対象がマルウェアのとき": {
+"参照": {
+"Eshete": "EKHunter",
+"Jang": "Towards Automatic Software Lineage Inference",
+"Yakdan": "Helping Johnny to Analyze Malware"
+},
+"デフォルト": "非倫理的ではない"
+},
+"デフォルト": "禁止"
+}
+},
+"SE:MW(マルウェア)": {
+"参照": {
+"Buyukkayhan": "CrossFire"
+},
+"PoCを開発者の環境のみで実装し公開しない": {
+"Properties": ["Condition"],
+"参照": {
+"Garman": "Dancing on the Lip of the Volcano: Chosen Ciphertext Attacks on Apple IMessage"
+},
+"デフォルト": "グレー"
+},
+"ハッキングの一部や全部を自動化するツールを作ること[配信と違う] [例：エクスプロイトジェネレータ]": {
+"参照": {
+"Bittau": "Hacking Blind",
+"Eshete": "EKHunter",
+"Snow": "Just-In-Time Code Reuse"
+},
+"デフォルト": "非倫理的ではない"
+},
+"マルウェアの投稿、送信または配信先が……": {
+"Properties": ["Condition"],
+"参照": {
+"Wang": "Jekyll on iOS"
+},
+"XOR": {
+"XOR": "研究機関(倫理委員会、国毎の基準など)は、いずれかのXORノードを(すべてのケースに一貫して適用できるよう)選択する必要があります。",
+"ある特定の場所に限定されているとき": {
+"note": "App Store, 公開コードレポジトリ, メーリングリスト等, TBD",
+"XOR": {
+"XOR": "研究機関(倫理委員会、国毎の基準など)は、いずれかのXORノードを(すべてのケースに一貫して適用できるよう)選択する必要があります。",
+"長期に渡って……": {
+"同意のもとで投稿等が行われること": "グレー",
+"明白な同意がないこと": "グレー",
+"投稿先等の利用規約やライセンス等を違反していること": "グレー"
+},
+"きわめて短期に渡って……": {
+"同意のもとで投稿等が行われること": "非倫理的ではない",
+"明白な同意がないこと": "グレー",
+"投稿先等の利用規約やライセンス等を違反していること": "グレー"
+}
+}
+},
+"場所を限定しないとき": {
+"XOR": {
+"XOR": "研究機関(倫理委員会、国毎の基準など)は、いずれかのXORノードを(すべてのケースに一貫して適用できるよう)選択する必要があります。",
+"長期に渡って……": {
+"同意のもとで投稿等が行われること": "グレー",
+"明白な同意がないこと": "グレー",
+"投稿先等の利用規約やライセンス等を違反していること": "グレー"
+},
+"きわめて短期に渡って……": {
+"同意のもとで投稿等が行われること": {
+"誰も影響されていない場合": "非倫理的ではない"
+},
+"明白な同意がないこと": "グレー",
+"投稿先等の利用規約やライセンス等を違反していること": "グレー"
+}
+}
+}
+}
+},
+"マルウェアに感染させる対象から……": {
+"Properties": ["Condition"],
+"参照": {
+"Simon": "Don't Interrupt Me While I Type"
+},
+"同意が得られていること": "非倫理的ではない",
+"明白な同意がないこと": "禁止",
+"投稿先等の利用規約やライセンス等を違反していること": {
+"デフォルト": "禁止"
+}
+},
+"（動的解析を含む）マルウェアの実行が": {
+"Properties": ["Condition"],
+"参照": {
+"Jang": "Towards Automatic Software Lineage Inference",
+"Li": "Hunting the Red Fox Online",
+"Viswanath": "Towards Detecting Anomalous User Behavior in Online Social Networks",
+"Nappa": "Cyberprobe: Towards Internet-Scale Active Detection of Malicious Servers"
+},
+"外部に影響を与えること(例：マルウェアが公開されない。誰かのウェブページを改ざんしない)": "禁止",
+"ネットワークに能動的に接続させる可能性のあるマルウェアの実行を伴う研究を行う": {
+"Properties": ["Condition"],
+"デフォルト": "禁止"
+},
+"インストールしたマルウェアが他のマルウェアのダウンロード/インストール/実行をしないことを保証すること": "必須の可能性がある",
+"サンドボックスでのマルウェアのインストール/実行": {
+"Properties": ["Condition"],
+"デフォルト": "非倫理的ではない"
+}
+}
+},
+"SE:DI(脆弱性の開示)": {
+"参照": {
+"Bhargavan": "On the Practical (In-)Security of 64-Bit Block Ciphers",
+"Bianchi": "What the App Is That?",
+"Biryukov": "Trawling for Tor Hidden Services",
+"Eshete": "EKHunter",
+"Simon": "Don't Interrupt Me While I Type",
+"Deshotels": "SandScout",
+"Wang1": "Call Me Back!",
+"Wang2": "Jekyll on iOS",
+"Liao": "Lurking Malice in the Cloud",
+"Yang": "The Ever-Changing Labyrinth",
+"Li": "Hunting the Red Fox Online",
+"Liu": "All Your DNS Records Point to Us",
+"Shaik": "Practical Attacks Against Privacy and Availability in 4G/LTE Mobile Communication Systems",
+"Thomas": "Ad Injection at Scale"
+},
+"（広く公開される前に）ベンダまたは利害関係者を対象に(私的)開示すること": "必須",
+"私的開示を行うとき": {
+"Properties": ["Condition"],
+"参照": {
+"SANS": "https://www.sans.org/reading-room/whitepapers/threats/define-responsible-disclosure-932",
+"NCSC": "Responsible Disclosure Guideline",
+"CERT": "Vulnerability Disclosure Policy"
+},
+"広く公開される前に(私的)開示すること": "必須",
+"脆弱性に関する全ての詳細情報を付けること": "必須",
+"公開期限（デフォルト30~60日）の設定を試みること": "必須",
+"安全な通信を利用すること": "必須の可能性がある",
+"開示対象が、悪影響の及ぶ相手(被害者を含む)であること": "必須の可能性がある",
+"脆弱性がゼロデイである場合": {
+"デフォルト": {
+"当該脆弱性と関係ない研究者に開示すること": {
+"Properties": ["Condition"],
+"デフォルト": "禁止"
+},
+"ベンダの返信を待たない場合": {
+"Properties": ["Condition"],
+"所定の期限までに開示すること": "禁止",
+"所定の期限後に開示すること": "非倫理的ではない"
+}
+},
+"脆弱性の悪用が既に観測されている場合": {
+"当該脆弱性と関係ない研究者に開示すること": "必須の可能性がある",
+"広く公開される前の開示": "非倫理的ではない",
+"ベンダの返信を待たずに発表すること": {
+"Properties": ["Condition"],
+"デフォルト": "非倫理的ではない"
+},
+"パッチを待たずに発表すること": {
+"Properties": ["Condition"],
+"デフォルト": "非倫理的ではない"
+}
+}
+},
+"パッチを待たずに発表すること": {
+"Properties": ["Condition"],
+"ただし所定の期限までに": "禁止",
+"ただし所定の期限後に": {
+"ベンダが協力してくれる場合": "禁止",
+"ベンダが協力しない場合": "非倫理的ではない"
+}
+}
+},
+"（一般）公開するとき": {
+"参照": {
+"Bittau": "Hacking Blind",
+"Buyukkayhan": "CrossFire",
+"Grubbs": "Breaking Web Applications Built On Top of Encrypted Data",
+"Snow": "Just-In-Time Code Reuse"
+},
+"完全に機能する、新規あるいは修正した悪意あるコードを付けること": {
+"Properties": ["Condition"],
+"デフォルト": "禁止"
+},
+"新規あるいは修正した悪意あるコードの一部を付けること": {
+"Properties": ["Condition"],
+"デフォルト": "グレー"
+},
+"エクスプロイトコードを付けること": {
+"Properties": ["Condition"],
+"デフォルト": "禁止"
+},
+"脆弱性を引き起こす理論的な説明を付けること": "必須",
+"脆弱性検出の詳細情報を付けること": "必須",
+"（存在する場合）解決策を付けること": "必須",
+"脆弱性がゼロデイの場合": {
+"ベンダに連絡する前、またはそれと並行して公開すること": {
+"Properties": ["Condition"],
+"デフォルト": "禁止"
+}
+},
+"脆弱性の悪用が既に観測されている場合": {
+"ベンダに連絡する前、またはそれと並行して公開すること": "非倫理的ではない"
+}
+}
+}
+},
+"PR(データの利活用)": {
+"コメント": "現時点では、PIIとその他のデータ、活動、情報等は区別しない",
+"PR:CD(データ収集)": {
+"Properties": ["Condition"],
+"一般の人間・動物を対象とするとき": {
+"（メンロレポートやACMの倫理規範等に定められている）事前通知プロセスに基づいてデータを収集しているとき": {
+"参照": {
+"Blythe": "Unpacking security policy compliance",
+"Gulyas": "Near-Optimal Fingerprinting with Constraints",
+"Hardy": "Targeted Threat Index",
+"Park": "Scambaiter",
+"Reaves": "Boxed Out",
+"Shoshitaishvili": "Portrait of a Privacy Invasion",
+"Thomas": "Ad Injection at Scale"
+},
+"デフォルト": "必須"
+},
+"データ収集が主目的でない、（答えるとボーナスがもらえるような）他のサービスに付随する場合": {
+"参照": {
+"Almuhimedi": "Your Reputation Precedes You",
+"Lee": "You Are a Game Bot!",
+"Park": "Scambaiter",
+"Shoshitaishvili": "Portrait of a Privacy Invasion"
+},
+"デフォルト": "禁止"
+},
+"データの利用を特定の実験に限るという研究契約に署名をしたとき": {
+"参照": {
+"Gulyas": "Near-Optimal Fingerprinting with Constraints"
+},
+"デフォルト": "必須"
+},
+"収集/保管したデータを必要最小限に留めるように努力すること": {
+"参照": {
+"Almuhimedi": "Your Reputation Precedes You",
+"Grimm": "Survey on the Fate of Digital Footprints after Death",
+"Gulyas": "Near-Optimal Fingerprinting with Constraints",
+"Kaczmarek": "An Unattended Study of Users Performing Security Critical Tasks under Adversarial Noise",
+"Nakibly": "Website-Targeted False Content Injection by Network Operators",
+"Liao": "Lurking Malice in the Cloud",
+"Park": "Scambaiter",
+"Shoshitaishvili": "Portrait of a Privacy Invasion",
+"Yang": "The Ever-Changing Labyrinth",
+"Simon": "Don't Interrupt Me While I Type"
+},
+"デフォルト": "必須",
+"データ収集期間において、技術的に収集すべき情報を最小化すること（これは保管や解析の前に行う）": "必須"
+}
+},
+"悪意あるハッカーを対象とするとき": {
+"ただし自身の所有するシステムに不法に侵入したハッカーのデータを収集するとき": {
+"（メンロレポートやACMの倫理規範等に定められている）事前通知プロセスに基づいてデータを収集しているとき": {
+"参照": {
+"Blythe": "Unpacking security policy compliance",
+"Gulyas": "Near-Optimal Fingerprinting with Constraints",
+"Hardy": "Targeted Threat Index",
+"Park": "Scambaiter",
+"Reaves": "Boxed Out",
+"Shoshitaishvili": "Portrait of a Privacy Invasion",
+"Thomas": "Ad Injection at Scale"
+},
+"デフォルト": "必須の可能性がある"
+},
+"データ収集が主目的でない、（答えるとボーナスがもらえるような）他のサービスに付随する場合": {
+"参照": {
+"Almuhimedi": "Your Reputation Precedes You",
+"Lee": "You Are a Game Bot!",
+"Park": "Scambaiter",
+"Shoshitaishvili": "Portrait of a Privacy Invasion"
+},
+"デフォルト": "グレー"
+},
+"データの利用を特定の実験に限るという研究契約に署名をしたとき": {
+"参照": {
+"Gulyas": "Near-Optimal Fingerprinting with Constraints"
+},
+"デフォルト": "必須の可能性がある"
+},
+"収集/保管したデータを必要最小限に留めるように努力すること": {
+"参照": {
+"Almuhimedi": "Your Reputation Precedes You",
+"Grimm": "Survey on the Fate of Digital Footprints after Death",
+"Gulyas": "Near-Optimal Fingerprinting with Constraints",
+"Kaczmarek": "An Unattended Study of Users Performing Security Critical Tasks under Adversarial Noise",
+"Nakibly": "Website-Targeted False Content Injection by Network Operators",
+"Liao": "Lurking Malice in the Cloud",
+"Park": "Scambaiter",
+"Shoshitaishvili": "Portrait of a Privacy Invasion",
+"Yang": "The Ever-Changing Labyrinth",
+"Simon": "Don't Interrupt Me While I Type"
+},
+"デフォルト": "必須の可能性がある",
+"データ収集期間において、技術的に収集すべき情報を最小化すること（これは保管や解析の前に行う）": "必須の可能性がある"
+}
+},
+"デフォルト": {
+"（メンロレポートやACMの倫理規範等に定められている）事前通知プロセスに基づいてデータを収集しているとき": {
+"参照": {
+"Blythe": "Unpacking security policy compliance",
+"Gulyas": "Near-Optimal Fingerprinting with Constraints",
+"Hardy": "Targeted Threat Index",
+"Park": "Scambaiter",
+"Reaves": "Boxed Out",
+"Shoshitaishvili": "Portrait of a Privacy Invasion",
+"Thomas": "Ad Injection at Scale"
+},
+"デフォルト": "必須の可能性がある"
+},
+"データ収集が主目的でない、（答えるとボーナスがもらえるような）他のサービスに付随する場合": {
+"参照": {
+"Almuhimedi": "Your Reputation Precedes You",
+"Lee": "You Are a Game Bot!",
+"Park": "Scambaiter",
+"Shoshitaishvili": "Portrait of a Privacy Invasion"
+},
+"デフォルト": "グレー"
+},
+"データの利用を特定の実験に限るという研究契約に署名をしたとき": {
+"参照": {
+"Gulyas": "Near-Optimal Fingerprinting with Constraints"
+},
+"デフォルト": "必須の可能性がある"
+},
+"収集/保管したデータを必要最小限に留めるように努力すること": {
+"参照": {
+"Almuhimedi": "Your Reputation Precedes You",
+"Grimm": "Survey on the Fate of Digital Footprints after Death",
+"Gulyas": "Near-Optimal Fingerprinting with Constraints",
+"Kaczmarek": "An Unattended Study of Users Performing Security Critical Tasks under Adversarial Noise",
+"Nakibly": "Website-Targeted False Content Injection by Network Operators",
+"Liao": "Lurking Malice in the Cloud",
+"Park": "Scambaiter",
+"Shoshitaishvili": "Portrait of a Privacy Invasion",
+"Yang": "The Ever-Changing Labyrinth",
+"Simon": "Don't Interrupt Me While I Type"
+},
+"デフォルト": "必須の可能性がある",
+"データ収集期間において、技術的に収集すべき情報を最小化すること（これは保管や解析の前に行う）": "必須の可能性がある"
+}
+}
+},
+"コンピュータシステムを対象とするとき": {
+"（例えば、メンロレポートやACM等の倫理規範等に定められている）事前通知プロセスに基づいてデータを収集": {
+"参照": {
+"Blythe": "Unpacking security policy compliance",
+"Gulyas": "Near-Optimal Fingerprinting with Constraints",
+"Hardy": "Targeted Threat Index",
+"Park": "Scambaiter",
+"Reaves": "Boxed Out",
+"Shoshitaishvili": "Portrait of a Privacy Invasion",
+"Thomas": "Ad Injection at Scale"
+},
+"デフォルト": "必須 "
+},
+"データ収集が主目的でない、（答えるとボーナスがもらえるような）他のサービスに付随する場合": {
+"参照": {
+"Almuhimedi": "Your Reputation Precedes You",
+"Lee": "You Are a Game Bot!",
+"Park": "Scambaiter",
+"Shoshitaishvili": "Portrait of a Privacy Invasion"
+},
+"デフォルト": "非倫理的ではない"
+},
+"データの利用を特定の実験に限るという研究契約に署名をすること": {
+"参照": {
+"Gulyas": "Near-Optimal Fingerprinting with Constraints"
+},
+"デフォルト": "必須の可能性がある"
+},
+"収集/保管したデータを必要最小限に留めるように努力すること": {
+"参照": {
+"Almuhimedi": "Your Reputation Precedes You",
+"Grimm": "Survey on the Fate of Digital Footprints after Death",
+"Gulyas": "Near-Optimal Fingerprinting with Constraints",
+"Kaczmarek": "An Unattended Study of Users Performing Security Critical Tasks under Adversarial Noise",
+"Nakibly": "Website-Targeted False Content Injection by Network Operators",
+"Liao": "Lurking Malice in the Cloud",
+"Park": "Scambaiter",
+"Shoshitaishvili": "Portrait of a Privacy Invasion",
+"Yang": "The Ever-Changing Labyrinth",
+"Simon": "Don't Interrupt Me While I Type"
+},
+"デフォルト": "必須",
+"データ収集期間において、技術的に収集すべき情報を最小化すること（これは保管や解析の前に行う）": "必須の可能性がある"
+}
+},
+"データオーナーの同意を得ずに公開されているデータを収集すること（例えば流出したパスワード等）": {
+"Properties": ["Condition"],
+"参照": {
+"Li": "A Large-Scale Empirical Analysis of Chinese Web Passwords",
+"Wang3": "Targeted Online Password Guessing"
+},
+"ただし、特に公開されているデータを取り下げることができない場合": "グレー",
+"デフォルト": "グレー"
+},
+"一般には公開されていないデータ(ただし法制度や契約等に反せずに取得可能)を収集すること": {
+"Properties": ["Condition"],
+"デフォルト": "非倫理的ではない"
+},
+"パスワード、PIN、その他ログイン情報を収集すること": {
+"Properties": ["Condition"],
+"参照": {
+"Schechter": "Learning Assigned Secrets for Unlocking Mobile Devices"
+},
+"デフォルト": "グレー"
+}
+},
+"PR:HD(データ処理を行うこと)": {
+"参照": {
+"Park": "Scambaiter",
+"Shoshitaishvili": "Portrait of a Privacy Invasion"
+},
+"データを収集し突合するとき": {
+"Properties": ["Condition"],
+"個人を再特定すること": "禁止",
+"個人特定には至らないが、データ同士の関係を導き出すこと": "非倫理的ではない"
+},
+"一般の人間・動物を対象とするとき": {
+"参照": {
+"Harkous": "The Curious Case of the PDF Converter That Likes Mozart"
+},
+"保管時にデータの暗号化を行うこと": "必須",
+"輸送中にデータの暗号化を行うこと": "必須",
+"解析する前にデータの仮名化、匿名化などを行うこと": {
+"参照": {
+"Almuhimedi": "Your Reputation Precedes You",
+"Gulyas": "Near-Optimal Fingerprinting with Constraints",
+"Kellaris": "Generic Attacks on Secure Outsourced Databases",
+"Lee": "You Are a Game Bot!",
+"Moreno-Sanchez": "Listening to Whispers of Ripple",
+"Nakibly": "Website-Targeted False Content Injection by Network Operators",
+"Reaves": "Sending Out an SMS"
+},
+"デフォルト": "必須"
+},
+"今後の利用を想定したデータ（コピー）の保管を行うとき": {
+"参照": {
+"Schreiber": "To Befriend Or Not?",
+"Hardy": "Targeted Threat Index",
+"Kaczmarek": "An Unattended Study of Users Performing Security Critical Tasks under Adversarial Noise",
+"Biryukov": "Trawling for Tor Hidden Services",
+"Liao": "Lurking Malice in the Cloud",
+"Li": "Hunting the Red Fox Online",
+"Thomas": "Ad Injection at Scale"
+},
+"エラーがあって集めなおす必要がある場合でも、可能な限り速やかに、使用後に速やかにデータを削除すること": "必須",
+"加えて、データを持っている時間を最小限にするようなソフトウェアの流れの構造を作ること": "必須の可能性がある",
+"一時的な連絡に伴って得られたメールやその他の情報を削除すること": "必須",
+"データを保持する時間を最小化するために、データドリブンの研究を優先的に行うこと": "必須"
+}
+},
+"悪意あるハッカーを対象とするとき": {
+"自身の所有するシステムに不法に侵入したハッカーのデータを収集すること": {
+"保管時にデータの暗号化を行うこと": "必須の可能性がある",
+"輸送中にデータの暗号化を行うこと": {
+"参照": {
+"Harkous": "The Curious Case of the PDF Converter That Likes Mozart"
+},
+"デフォルト": "必須の可能性がある"
+},
+"解析する前にデータの仮名化、匿名化などを行うこと": {
+"参照": {
+"Almuhimedi": "Your Reputation Precedes You",
+"Gulyas": "Near-Optimal Fingerprinting with Constraints",
+"Kellaris": "Generic Attacks on Secure Outsourced Databases",
+"Lee": "You Are a Game Bot!",
+"Moreno-Sanchez": "Listening to Whispers of Ripple",
+"Nakibly": "Website-Targeted False Content Injection by Network Operators",
+"Reaves": "Sending Out an SMS"
+},
+"デフォルト": "必須の可能性がある"
+},
+"今後の利用を想定したデータ（コピー）の保管を行うとき": {
+"参照": {
+"Schreiber": "To Befriend Or Not?",
+"Hardy": "Targeted Threat Index",
+"Kaczmarek": "An Unattended Study of Users Performing Security Critical Tasks under Adversarial Noise",
+"Biryukov": "Trawling for Tor Hidden Services",
+"Liao": "Lurking Malice in the Cloud",
+"Li": "Hunting the Red Fox Online",
+"Thomas": "Ad Injection at Scale"
+},
+"エラーがあって集めなおす必要がある場合でも、可能な限り速やかに、使用後に速やかにデータを削除すること": "必須の可能性がある",
+"一時的な連絡に伴って得られたメールやその他の情報を削除すること": "必須の可能性がある",
+"加えて、データを持っている時間を最小限にするようなソフトウェアの流れの構造を作ること": "必須の可能性がある",
+"データを保持する時間を最小化するために、データドリブンの研究を優先的に行うこと": "必須の可能性がある"
+}
+},
+"デフォルト": {
+"保管時にデータの暗号化を行うこと": "必須の可能性がある",
+"輸送中にデータの暗号化を行うこと": {
+"参照": {
+"Harkous": "The Curious Case of the PDF Converter That Likes Mozart"
+},
+"デフォルト": "必須の可能性がある"
+},
+"解析する前にデータの仮名化、匿名化などを行うこと": {
+"参照": {
+"Almuhimedi": "Your Reputation Precedes You",
+"Gulyas": "Near-Optimal Fingerprinting with Constraints",
+"Kellaris": "Generic Attacks on Secure Outsourced Databases",
+"Lee": "You Are a Game Bot!",
+"Moreno-Sanchez": "Listening to Whispers of Ripple",
+"Nakibly": "Website-Targeted False Content Injection by Network Operators",
+"Reaves": "Sending Out an SMS"
+},
+"デフォルト": "必須"
+},
+"今後の利用を想定したデータ（コピー）の保管を行うとき": {
+"参照": {
+"Schreiber": "To Befriend Or Not?",
+"Hardy": "Targeted Threat Index",
+"Kaczmarek": "An Unattended Study of Users Performing Security Critical Tasks under Adversarial Noise",
+"Biryukov": "Trawling for Tor Hidden Services",
+"Liao": "Lurking Malice in the Cloud",
+"Li": "Hunting the Red Fox Online",
+"Thomas": "Ad Injection at Scale"
+},
+"エラーがあって集めなおす必要がある場合でも、可能な限り速やかに、使用後に速やかにデータを削除すること": "必須の可能性がある",
+"一時的な連絡に伴って得られたメールやその他の情報を削除すること": "必須の可能性がある",
+"加えて、データを持っている時間を最小限にするようなソフトウェアの流れの構造を作ること": "必須の可能性がある",
+"データを保持する時間を最小化するために、データドリブンの研究を優先的に行うこと": "必須の可能性がある"
+}
+}
+},
+"コンピュータシステムを対象とするとき": {
+"保管時にデータの暗号化を行うこと": "必須の可能性がある",
+"輸送中にデータの暗号化を行うこと": {
+"参照": {
+"Harkous": "The Curious Case of the PDF Converter That Likes Mozart"
+},
+"デフォルト": "必須の可能性がある"
+},
+"解析する前にデータの仮名化、匿名化などを行うこと": {
+"参照": {
+"Almuhimedi": "Your Reputation Precedes You",
+"Gulyas": "Near-Optimal Fingerprinting with Constraints",
+"Kellaris": "Generic Attacks on Secure Outsourced Databases",
+"Lee": "You Are a Game Bot!",
+"Moreno-Sanchez": "Listening to Whispers of Ripple",
+"Nakibly": "Website-Targeted False Content Injection by Network Operators",
+"Reaves": "Sending Out an SMS"
+},
+"デフォルト": "必須"
+},
+"今後の利用を想定したデータ（コピー）の保管を行うこと": {
+"参照": {
+"Schreiber": "To Befriend Or Not?",
+"Hardy": "Targeted Threat Index",
+"Kaczmarek": "An Unattended Study of Users Performing Security Critical Tasks under Adversarial Noise",
+"Biryukov": "Trawling for Tor Hidden Services",
+"Liao": "Lurking Malice in the Cloud",
+"Fernandes": "Security Analysis of Emerging Smart Home Applications",
+"Blocki": "Spaced Repetition and Mnemonics Enable Recall of Multiple Strong Passwords",
+"Li": "Hunting the Red Fox Online",
+"Thomas": "Ad Injection at Scale"
+},
+"エラーがあって集めなおす必要がある場合でも、可能な限り速やかに、使用後に速やかにデータを削除すること": "必須の可能性がある",
+"加えて、データを持っている時間を最小限にするようなソフトウェアの流れの構造を作ること": "必須の可能性がある",
+"一時的な連絡に伴って得られたメールやその他の情報を削除すること": "必須",
+"データを保持する時間を最小化するために、データドリブンの研究を優先的に行うこと": "必須"
+}
+}
+},
+"PR:PD(データの公開を行うこと)": {
+"Properties": ["Condition"],
+"参照": {
+"Diao": "No Pardon for the Interruption"
+},
+"同意がある場合": {
+"一般の人間・動物を対象とすること": "非倫理的ではない",
+"悪意あるハッカーを対象とするとき": {
+"デフォルト": "グレー",
+"自身の所有するシステムに不法に侵入したハッカーのデータを収集すること": "グレー"
+},
+"コンピュータシステムを対象とすること": "グレー"
+},
+"明白な同意がないこと": {
+"参照": {
+"Reaves": "Sending Out an SMS",
+"Harkous": "The Curious Case of the PDF Converter That Likes Mozart"
+},
+"一般の人間・動物を対象とすること": "禁止",
+"悪意あるハッカーを対象とするとき": {
+"デフォルト": "グレー",
+"自身の所有するシステムに不法に侵入したハッカーのデータを収集すること": "グレー"
+},
+"コンピュータシステムを対象とすること": "グレー"
+}
+},
+"PR:TD(第三者移転)": {
+"Properties": ["Condition"],
+"参照": {
+"Japan Law": "Act on the Protection of Personal Information",
+"Thomas": "Ad Injection at Scale"
+},
+"デフォルト": "禁止",
+"転送データ、対象者の名前など日本の法律に必要とされる情報を収集すること": "必須",
+"転送が日本の法律に適合するとき": {
+"オプトアウトの同意を実質的に収集すること": "非倫理的ではない",
+"委託先に情報を開示すること": "非倫理的ではない"
+}
+}
+},
+"AU(第三者のシステムにアクセスすること)": {
+"AU:WS(スキャン・クロールなど)": {
+"参照": {
+"Biryukov": "Trawling for Tor Hidden Services",
+"Brookman": "Cross-Device Tracking",
+"Harkous": "The Curious Case of the PDF Converter That Likes Mozart",
+"Liao": "Lurking Malice in the Cloud",
+"Li": "Hunting the Red Fox Online",
+"Liu": "All Your DNS Records Point to Us",
+"McPherson": "CovertCast",
+"Nakibly": "Website-Targeted False Content Injection by Network Operators",
+"Weinberg": "Topics of Controversy",
+"Zhang": "On the Mismanagement and Maliciousness of Networks"
+},
+"「robots.txt」に従わないとき": {
+"Properties": ["Condition"],
+"同意が得られていること": "非倫理的ではない",
+"明白な同意がないこと": "グレー"
+},
+"スキャン": {
+"参照": {
+"Durumeric": "ZMap: Fast Internet-Wide Scanning and Its Security Applications",
+"Nappa": "Cyberprobe: Towards Internet-Scale Active Detection of Malicious Servers",
+"Ensafi": "Analyzing the Great Firewall of China Over Space and Time",
+"Holz": "TLS in the Wild: An Internet-wide Analysis of TLS-based Protocols for Electronic Communication",
+"Viswanath": "Towards Detecting Anomalous User Behavior in Online Social Networks",
+"Khan": "Every Second Counts: Quantifying the Negative Externalities of Cybercrime via Typosquatting",
+"Krupp": "Identifying the Scan and Attack Infrastructures Behind Amplification DDoS Attacks"
+},
+"研究で行うスキャンがイントラもしくはインターネットプロバイダに影響を与えないことを確認すること": "必須の可能性がある",
+"ネットワークシステムやインターネットへのアクティブなスキャン": {
+"Properties": ["Condition"],
+"デフォルト": "非倫理的ではない"
+},
+"可能な限り影響を少なくするためスキャン量を調整すること": "必須",
+"収集した通信のIPやMACアドレスを保存すること": {
+"Properties": ["Condition"],
+"デフォルト": "グレー"
+},
+"通信時にあらかじめ用意したホストのブラックリスト・ホワイトリストを使用すること": "必須",
+"スキャンをオプトアウトするための手段を被験者に分かりやすい形で提供することによりブラックリストを維持し、被験者からのオプトアウト要求にすみやかに対応すること": "必須",
+"リスク軽減および問い合わせ処理のために、ネットワーク管理者と密に調整すること": "必須",
+"スキャン時に研究者の資産が送信する通信が悪意のないことを検証すること": "必須の可能性がある",
+"他の人/組織や機器になりすました通信": {
+"Properties": ["Condition"],
+"デフォルト": "グレー"
+},
+"スキャン対象のサーバ管理者等，影響を受ける可能性のある関係者に現在のスキャンおよび研究の情報を提供すること。ただし実験においてスキャンの情報を公開しない，または欺く必要がある場合はその限りではない。": {
+"ウェブページなどを用いてスキャン調査の性質/範囲/目的に関する情報を提供すること": "必須",
+"実験者の連絡先情報を掲載すること": "必須"
+}
+},
+"クロール": {
+"参照": {
+"Soska": "Measuring the Longitudinal Evolution of the Online Anonymous Marketplace Ecosystem",
+"Panchenko": "Website Fingerprinting at Internet Scale"
+},
+"過度なスクレイピングの実施（サイトのサービスレベル低下や、「robots.txt」の無視、人間にはできないような速度でのアクセス等）を行うこと": {
+"Properties": ["Condition"],
+"デフォルト": "禁止"
+},
+"ウェブサイト全体のスクレイピングを試みること": {
+"Properties": ["Condition"],
+"デフォルト": "グレー"
+},
+"同一のウェブサイトを繰り返し何回もスクレイピングすること": {
+"Properties": ["Condition"],
+"デフォルト": "グレー"
+}
+},
+"ネットワーク共有資源などの過剰な利用": {
+"Properties": ["Condition"],
+"デフォルト": "グレー"
+},
+"影響を最小限にとどめるよう努力すること（例：パッシブな情報収集や、シミュレーション、ウェブアーカイブなどを先に試す）": {
+"参照": {
+"Basescu": "SIBRA",
+"Reaves": "Boxed Out",
+"Sahin": "Over-The-Top Bypass",
+"Thomas": "Ad Injection at Scale",
+"Zhang": "On the Mismanagement and Maliciousness of Networks"
+},
+"デフォルト": "必須"
+},
+"自動的な方法を用いて、一度に複数のサイトを高速でアクセスすること（基本的にはひとつのページのみを対象とする）": {
+"Properties": ["Condition"],
+"デフォルト": "非倫理的ではない"
+}
+},
+"AU:BI(アクセスまたは侵入)": {
+"Properties": ["Condition"],
+"コメント": "悪いことと知りながら、通常のネットワーク活動を超えて故意に他者のシステムにアクセス、制御すること",
+"参照": {
+"Khan": "Every Second Counts: Quantifying the Negative Externalities of Cybercrime via Typosquatting",
+"Thomas": "Trafficking Fraudulent Accounts: The Role of the Underground Market in Twitter Spam and Abuse",
+"Viswanath": "Towards Detecting Anomalous User Behavior in Online Social Networks",
+"Tischer": "Users Really Do Plug in USB Drives They Find",
+"Biryukov": "Trawling for Tor Hidden Services",
+"Cao": "Off-Path TCP Exploits",
+"Rossow": "SoK: P2PWNED",
+"Lian": "Measuring the Practical Impact of DNSSEC Deployment",
+"Aycock": "Why 'No Worse Off' Is Worse Off",
+"Schrittwieser": "Ethics in Security Research"
+},
+"他者が持つシステムにかかると思われる負荷を最小限にとどめること": "必須",
+"第三者のリソースにプログラクをインストールすること": {
+"Properties": ["Condition"],
+"デフォルト": "グレー"
+},
+"明示的な同意なしに被験者の資産でプログラムを実行させるかコードを自動的に実行すること（例：スケジューラ・ブラウザ・USBプログラムの自動実行など）": {
+"Properties": ["Condition"],
+"デフォルト": "グレー"
+},
+"デバイスやサービスの管理者と直接協力して調査すること": "必須の可能性がある",
+"被験者または第三者のデバイスに格納されている一般に公開されていない被験者のデータを利用したい場合に、そのデバイスを用いてプログラムまたは計算を実行すること": "必須",
+"利用者の許可をとったうえで、(無害のでも、）ウェブコンテンツをそのブラウザ内に読み込むこと": {
+"Properties": ["Condition"],
+"デフォルト": "グレー"
+},
+"同意がないまま第三者のウェブサイト等のアカウントにアクセスすること": {
+"Properties": ["Condition"],
+"参照": {
+"Li": "A Large-Scale Empirical Analysis of Chinese Web Passwords",
+"Reaves": "Sending Out an SMS"
+},
+"デフォルト": "禁止"
+},
+"正当な権利者や権限がある者の許可を得て、なおかつ必要性がある場合（例：捜査令状等ではあるが、法律だけを根拠にするには不十分である）": {
+"システムが第三者によって違法行為に用いられているとき": {
+"影響が一切出ないことがわかっていること": "非倫理的ではない",
+"影響の大きさを定量化しておらず、それがどれくらいになるか測れないこと": "グレー",
+"影響の大きさを評価すること": "必須"
+},
+"デフォルト": {
+"参照": {
+"Harkous": "The Curious Case of the PDF Converter That Likes Mozart",
+"Marczak": "Social Engineering Attacks on Government Opponents"
+},
+"コメント": "本件はあなた自信の理解を深め、コンピュータに関して問題を抱える第三者の手助けにもなりうる。",
+"影響が一切出ないことがわかっていること": "非倫理的ではない",
+"影響の大きさを定量化しておらず、それがどれくらいになるか測れないこと": "グレー",
+"影響の大きさを評価すること": "必須"
+}
+},
+"正当な権利者や権限がある者の許可がない場合": {
+"システムが第三者によって違法行為に用いられており、……": {
+"影響が一切出ないことがわかっていること": "グレー",
+"影響の大きさを定量化しておらず、それがどれくらいになるか測れないこと": "禁止",
+"影響の大きさを評価すること": "必須"
+},
+"デフォルト": "禁止"
+},
+"間接的な影響（例：ボットネットのC2サーバを操作することによる被害ノードに対する影響）を考慮しないこと": "グレー"
+}
+},
+"HS(所有されたまたは共有システム対象実験・被験者実験、REBs・IRBs)": {
+"HS:DE(実験対象の人間または動物を欺く実験)": {
+"Properties": ["Condition"],
+"参照": {
+"Budurushi": "Introducing Precautionary Behavior by Temporal Diversion of Voter Attention from Casting to Verifying Their Vote",
+"Javed": "Look before You Authorize: Using Eye-Tracking to Enforce User Attention towards Application Permissions",
+"Tischer": "Users Really Do Plug in USB Drives They Find",
+"Fu": "A Field Study of Run-Time Location Access Disclosures on Android Smartphones",
+"Park": "Scambaiter",
+"Schreiber": "To Befriend Or Not?",
+"Aycock": "Why 'No Worse Off' Is Worse Off"
+},
+"特定のデバイス、ツール、またはネットワークを自分自身に接続するように他人を欺く、奨励する、または誘惑することを目的とした行為の実行（フィッシングやUSBのばらまきなど）": {
+"Properties": ["Condition"],
+"デフォルト": "グレー"
+},
+"デフォルト": "禁止",
+"デブリーフィングを行うこと。ただしデブリーフィングをしない特別な理由があり、かつ倫理委員会からデブリーフィングをしないことへの許可を事前にもらった場合はその限りではない": "必須"
+},
+"HS:AD(虚偽などの広告)": {
+"Properties": ["Condition"],
+"参照": {
+"Park": "Scambaiter",
+"Japan Law": "Act against Unjustifiable Premiums and Misleading Representations",
+"US Law": "15 U.S. Code § 45c",
+"EU Law": "European Directive 2005/29"
+},
+"デフォルト": "禁止",
+"商品あるいはサービスを実際の効能よりも良く見せようとして**いない**場合": {
+"消費者に特定の商品を買うように誘導すること": "禁止",
+"デフォルト": "非倫理的ではない"
+},
+"研究対象のコンピューターセキュリティを促進するために(広告)しているとき": {
+"デフォルト": "グレー",
+"研究がオンラインイベントチケット事業のコンピューターセキュリティを促進するため(US Law参照)": "非倫理的ではない"
+},
+"平均的な消費者に対して危害を与えないために、広告が履行すべき義務をまとめたポリシーを作ること (例：日本では虚偽の広告に関して罰せられることがある)": "非倫理的ではない",
+"(参考：US法) ドメインや商標を何かに似せるとき": {
+"それを用いることで不当に利益を得ようとすること": "禁止",
+"デフォルト": "非倫理的ではない"
+}
+},
+"HS:HP(第三者からの通信の観測)": {
+"相手の同意または同意の放棄なしに、あなた自身のシステム(ハニーポットなど)における行動・データを記録するとき": {
+"Properties": ["Condition"],
+"外部に強い誘導(例えば掲示板にURLを貼るなど)を行っていないとき": {
+"第三者によって違法にアクセスされることを目的としてシステム(ハニーポットなど)を配備する場合": {
+"Properties": ["Condition"],
+"デフォルト": "非倫理的ではない"
+},
+"あなた自身のデバイスに対する通信を記録すること": {
+"Properties": ["Condition"],
+"参照": {
+"Han": "PhishEye"
+},
+"デフォルト": "非倫理的ではない"
+},
+"スパムハニーポット（メール情報の広告や、収集したメールの記録）を展開するとき": {
+"Properties": ["Condition"],
+"参照": {
+"Park": "Scambaiter",
+"Liao": "Lurking Malice in the Cloud"
+},
+"デフォルト": "非倫理的ではない"
+}
+},
+"外部に強い誘導(例えば掲示板にURLを貼るなど)を行っているとき": {
+"第三者によって違法にアクセスされることを目的としてシステム(ハニーポットなど)を配備する場合": {
+"Properties": ["Condition"],
+"デフォルト": "グレー"
+},
+"あなた自身のデバイスに対する通信を記録すること": {
+"Properties": ["Condition"],
+"参照": {
+"Han": "PhishEye"
+},
+"デフォルト": "禁止"
+},
+"スパムハニーポット（メール情報の広告や、収集したメールの記録）を展開するとき": {
+"Properties": ["Condition"],
+"参照": {
+"Park": "Scambaiter",
+"Liao": "Lurking Malice in the Cloud"
+},
+"デフォルト": "グレー"
+}
+}
+},
+"ハッカーにあなた自身のシステムを利用させる、あるいはマルウェアの実行を許可させること": {
+"Properties": ["Condition"],
+"参照": {
+"Han": "PhishEye"
+},
+"デフォルト": "グレー",
+"影響が一切出ないこと": "必須"
+}
+},
+"HS:CS(犯罪・非倫理的な商品の購入・サービスの利用)": {
+"参照": {
+"Yang": "The Ever-Changing Labyrinth",
+"Viswanath": "Towards Detecting Anomalous User Behavior in Online Social Networks",
+"Thomas": "Trafficking Fraudulent Accounts: The Role of the Underground Market in Twitter Spam and Abuse"
+},
+"犯罪組織/ブラックマーケット/違法なプロバイダなどとの連絡を最小限にとどめること": "必須の可能性がある",
+"ブラックマーケットのサービスを購入すること": {
+"Properties": ["Condition"],
+"違法な製品/サービスの需要、供給を増加させる、もしくは犯罪者が資金を得るようになること": "グレー",
+"直接に犯罪に関連するサービスの利用、もしくは（それ自体は犯罪でなくとも）購入する場合": {
+"購入する前に警察と調整すること (例:潜入捜査のように)を確認すること": "必須"
+},
+"非倫理的な活動を行ってもらうこと（例：Blackhat SEO）": {
+"Properties": ["Condition"],
+"デフォルト": "グレー"
+}
+}
+},
+"HS:EB(IRB・REB等にの相談について)": {
+"参照": {
+"Bianchi": "What the App Is That?",
+"Raber": "Privacy Wedges",
+"Gulyas": "Near-Optimal Fingerprinting with Constraints",
+"Diao": "No Pardon for the Interruption",
+"Shoshitaishvili": "Portrait of a Privacy Invasion",
+"Schreiber": "To Befriend Or Not?",
+"Lee": "You Are a Game Bot!"
+},
+"人や動物に対して直接的に影響する研究を行うときに...": {
+"参照": {
+"Blythe": "Unpacking security policy compliance",
+"De Cristofaro": "An Exploratory Ethnographic Study of Issues and Concerns with Whole Genome Sequencing",
+"Grimm": "Survey on the Fate of Digital Footprints after Death",
+"Kaczmarek": "An Unattended Study of Users Performing Security Critical Tasks under Adversarial Noise",
+"Kirlappos": "Fixing Security Together",
+"Marczak": "Social Engineering Attacks on Government Opponents",
+"McGregor": "Individual versus Organizational Computer Security and Privacy Concerns in Journalism",
+"Neupane": "Neural Signatures of User-Centered Security",
+"Norcie": "Why Johnny Can’t Blow the Whistle",
+"Rashidi": "Understanding Saudis’ Privacy Concerns When Using WhatsApp",
+"Schechter": "Learning Assigned Secrets for Unlocking Mobile Devices",
+"Woodruff": "Would a Privacy Fundamentalist Sell Their DNA for $1000"
+},
+"REB・IRB等に相談すること": "必須",
+"組織における公式の倫理委員会が利用できない場合に、研究を取り巻く倫理について経験者と相談すること": "必須"
+},
+"研究において、人や動物が関係しないことが明らかでないとき": {
+"参照": {
+"Lian": "Measuring the Practical Impact of DNSSEC Deployment",
+"Liu": "All Your DNS Records Point to Us",
+"Yang": "The Ever-Changing Labyrinth"
+},
+"REB・IRB等に相談すること": "必須",
+"組織における公式の倫理委員会が利用できない場合に、研究を取り巻く倫理について経験者と相談すること": "必須"
+},
+"REB・IRBのルールにのみ従い、本倫理指針を考慮しないこと": {
+"Properties": ["Condition"],
+"デフォルト": "禁止"
+}
+},
+"HS:EX(所有されたまたは共有システム対象実験・被験者実験・面接法)": {
+"参照": {
+"Blocki": "Spaced Repetition and Mnemonics Enable Recall of Multiple Strong Passwords",
+"Tischer": "Users Really Do Plug in USB Drives They Find",
+"Javed": "Look before You Authorize: Using Eye-Tracking to Enforce User Attention towards Application Permissions",
+"Ensafi": "Analyzing the Great Firewall of China Over Space and Time",
+"Fu": "A Field Study of Run-Time Location Access Disclosures on Android Smartphones",
+"Durumeric": "ZMap: Fast Internet-Wide Scanning and Its Security Applications",
+"Blocki": "Spaced Repetition and Mnemonics Enable Recall of Multiple Strong Passwords",
+"Kelley": "Real-World Decision Making: Logging into Secure vs. Insecure Websites",
+"Das": "The Effect of Social Influence on Security Sensitivity",
+"Blythe": "Unpacking security policy compliance",
+"Canova": "NoPhish App Evaluation",
+"Grimm": "Survey on the Fate of Digital Footprints after Death",
+"Harkous": "The Curious Case of the PDF Converter That Likes Mozart",
+"Kaczmarek": "An Unattended Study of Users Performing Security Critical Tasks under Adversarial Noise",
+"Kirlappos": "Fixing Security Together",
+"Neupane": "Neural Signatures of User-Centered Security",
+"Leibenger": "Privacy Challenges in the Quantified Self Movement",
+"Marczak": "Social Engineering Attacks on Government Opponents",
+"McGregor": "Individual versus Organizational Computer Security and Privacy Concerns in Journalism",
+"Norcie": "Why Johnny Can’t Blow the Whistle",
+"Pu": "Towards a Model on the Factors Influencing Social App Users’ Valuation of Interdependent Privacy",
+"Rashidi": "Understanding Saudis’ Privacy Concerns When Using WhatsApp",
+"Rasmussen": "Authentication Using Pulse- Response Biometrics",
+"Sahin": "Over-The-Top Bypass",
+"Schechter": "Learning Assigned Secrets for Unlocking Mobile Devices",
+"Shubham": "Should I Protect You?",
+"Woodruff": "Would a Privacy Fundamentalist Sell Their DNA for $1000"
+},
+"許可なく実験の被験者へのインタビューを記録もしくは書き起こすこと": {
+"Properties": ["Condition"],
+"デフォルト": "グレー"
+},
+"被験者に自身のデバイスやアカウント、システム等にログインさせたり何かをインストールさせたり他に利用してくれるようにさせたりすること": {
+"Properties": ["Condition"],
+"デフォルト": "グレー"
+},
+"実験前に被験者に使用するソフトウェアやハードウェア・サービスなどにバグがないことを確認し、安全性を検証すること": "必須の可能性がある",
+"被験者・対象の所有者の貢献に対して適切に報いること": "必須",
+"出版にあたっては被験者を匿名化すること": "必須",
+"実験に参加する被験者の負担、ストレス、リスク等を最小限以上にとどめること": {
+"Properties": ["Condition"],
+"デフォルト": "禁止"
+},
+"被験者・対象の所有者に実験の条件を平等または（擬似）ランダムに割り当てること": "必須",
+"既存のデータセットやスクレイピングデータなどの大量のユーザデータが得られた場合にランダムサンプリングすること.": "必須の可能性がある",
+"デリケートな状況を最小限にとどめる、あるいはそれや侵襲的な課題に変わる別の選択肢を提供すること": "必須",
+"文化、慣習、被験者の置かれた状況を考慮し、尊重すること": "必須",
+"第三者に影響を与えることを目的としてソフトウェア/ハードウェア/サービスを使用する場合、それらを信頼のあるベンダーから調達すること": "必須の可能性がある",
+"被験者実験・面接法を行うことで、被験者に害が及ぶような危険を冒すこと": {
+"Properties": ["Condition"],
+"デフォルト": "禁止"
+}
+}
+},
+"GR(一般規則)": {
+"GR:TS(サービス利用規約および関連規約などにの違反)": {
+"Properties": ["Condition"],
+"参照": {
+"Schreiber": "To Befriend Or Not?",
+"Nakibly": "Website-Targeted False Content Injection by Network Operators",
+"Shoshitaishvili": "Portrait of a Privacy Invasion",
+"Brookman": "Cross-Device Tracking"
+},
+"それ自体が非倫理的であること（違反をしても非倫理的とみなされない場合）": "非倫理的ではない",
+"偽あるいは偽名アカウントを作成すること": {
+"Properties": ["Condition"],
+"デフォルト": "非倫理的ではない"
+},
+"デフォルト": "禁止"
+},
+"GR:EC(倫理的な一貫性)": {
+"組織をまたいで研究するとき": {
+"国ごとに異なる倫理基準を持つこと": {
+"Properties": ["Condition"],
+"デフォルト": "非倫理的ではない"
+},
+"同じ国で研究組織毎に異なる倫理基準を持つこと": {
+"Properties": ["Condition"],
+"デフォルト": "禁止"
+},
+"同じ組織で人によって異なる倫理基準を持つこと": {
+"Properties": ["Condition"],
+"デフォルト": "禁止"
+}
+},
+"本倫理指針の範囲内において明に'禁止'されていない行為についても監督機関やIRBと議論を行うこと": "必須",
+"長期にわたって研究を行う場合": {
+"本倫理指針に合っているか定期的に見直しを行うこと": "必須"
+},
+"無意識的に本倫理指針を破ってしまった場合": {
+"Properties": ["Condition"],
+"参照": {
+"Liao": "Lurking Malice in the Cloud",
+"Biryukov": "Trawling for Tor Hidden Services",
+"Rossow": "SoK: P2PWNED"
+},
+"危害が低減され(GR:AC:1)、違反に怠慢でないこと": "非倫理的ではない",
+"無頓着な姿勢でいること[例：無意識のうちに倫理的な行動をしないようにふるまうこと{規則を読まないことなど}]": {
+"Properties": ["Condition"],
+"デフォルト": "禁止"
+}
+},
+"研究活動のどこかの段階で本倫理指針に記載された規則に遭遇する可能性のある研究について倫理的な監督者が関係する実験を管理すること": {
+"参照": {
+"Nakibly": "Website-Targeted False Content Injection by Network Operators"
+},
+"実験を管理すること": "必須"
+}
+},
+"GR:DA(文書化と説明責任)": {
+"参照": {
+"Corrigan-Gibbs": "Ethics of Internet Freedom Promotion",
+"Nakibly": "Website-Targeted False Content Injection by Network Operators",
+"Sullins": "A Case Study in Malware Research Ethics Education"
+},
+"その研究の倫理に関する必要十分な声明書に関して……": {
+"本倫理指針に関係するような研究の計画や実施を行うとき": {
+"XOR": {
+"XOR": "研究機関(倫理委員会、国毎の基準など)は、いずれかのXORノードを(すべてのケースに一貫して適用できるよう)選択する必要があります。",
+"研究計画書の提出をすること": "必須",
+"関係する活動に取り掛かる前に文書化すること": "必須",
+"関係する活動を完了する前に文書化すること": "必須",
+"関係する活動を実行する前に文書化すること": "必須"
+}
+},
+"特に、その研究の倫理的な必要性を動機付けすること": "必須",
+"一部が本倫理指針に一致するからといって、残りの部分を無視すること": {
+"Properties": ["Condition"],
+"デフォルト": "禁止"
+},
+"研究行為全体にわたる潜在的な影響を発生させ得ることを明記すること": "必須",
+"メンロレポート C1に基づき、関係者を特定すること": "必須",
+"すべての関係者に対して、研究による利益と潜在的な危険性を特定すること（メンロレポート C3を参照せよ）": "必須",
+"緩和手法やチェックリスト（関係者の連絡先など）を作成すること": "必須",
+"研究に関係する法律や規制、契約などを特定すること": "必須",
+"研究の目的を明確に伝達すること（メンロレポート C.5.2）": "必須",
+"係る研究に関して、データ収集やICTを通じた直接のやり取りが必要なことを明確に伝達すること（メンロレポート C.5.2）": "必須",
+"研究結果がどのように利用されうるのかを明確に伝達すること（メンロレポート C.5.2）": "必須"
+}
+},
+"GR:AC(ACM Code of Ethics)": {
+"危害": {
+"コメント": "ここでの'危害' は損害や否定的な結果を意味する。情報の損失を含むがそれに限定されているわけではなく、資産の損失や既存、環境に対する望まない影響を含みうる。",
+"社会的な需要に合わせようとする努力すること": "必須",
+"局所あるいは全体的な環境に対して潜在的な危害を与えないように配慮すること": "必須",
+"危害のある活動を行うこと": {
+"Properties": ["Condition"],
+"コメント": [
+"例：人、公、雇用者、被雇用者等",
+"危害のある活動はファイルやプログラムを意図的に破壊または改ざんすることで、資産の致命的な損失を招くだけでなく、システムの復旧にかかる人的資産の損失も引き起こす。"
+],
+"デフォルト": "禁止"
+},
+"予測していない、または意図しない危害からの復旧や低減すること": "必須",
+"ネットワークや製品、他のシステムに関係するサイバーセキュリティの研究において、形式的なソフトウェアのテストを行うこと": "必須",
+"システムの特徴を誤って人や同僚、監督者に伝え、誤解させること": {
+"Properties": ["Condition"],
+"危害が出ないとき": "非倫理的ではない",
+"ただし、それで危害が出るとき": "禁止"
+},
+"個人あるいは社会に対して致命的な損害を与えるシステムの危機の兆候を受け取るったとき": {
+"文書化と報告を行うこと": "必須",
+"研究の監督者が研究によって発生しうる潜在的な危険を**緩和しない**としても、……": {
+"研究者が包括的に研究を管理すること": "必須",
+"他の権威や公に対して、その状況を報告すること（内部告発を含む）": {
+"Properties": ["Condition"],
+"デフォルト": "非倫理的ではない"
+}
+},
+"利益相反の可能性につながる状況を公開すること": {
+"コメント": "例) 出資、資格、義務、雇用などの関係性",
+"デフォルト": "必須"
+}
+}
+},
+"権威のある者のふりをするとき": {
+"Properties": ["Condition"],
+"実験の一環として、あえて欺瞞を用いる場合": "非倫理的ではない",
+"デフォルト": "禁止"
+},
+"対象選定について": {
+"Properties": ["Condition"],
+"コメント": [
+"例：データ収集や被験者の募集",
+"メンロレポートの C3 を見よ"
+],
+"人種、性別、宗教、年齢、障害、国籍などにより差別すること": "禁止",
+"それが意図的でなく、回避できない場合や研究の中心となる場合（除外ではなく、特定の対象に絞る場合）": "非倫理的ではない"
+},
+"知的財産": {
+"たとえそれが明確に保護されていない場合でも、適切な承認なしでソフトウェアをコピーすること": {
+"Properties": ["Condition"],
+"デフォルト": "禁止"
+},
+"知的財産に関する契約や法律に違反すること": {
+"Properties": ["Condition"],
+"デフォルト": "禁止"
+},
+"第三者のアイデアや仕事に対して出典元を記載すること": {
+"Properties": ["Condition"],
+"コメント": [
+"例えば、引用やコードの再利用など",
+"たとえそれがマルウェアや犯罪者のソフトウェアだとしても"
+],
+"デフォルト": "禁止",
+"著作権や特許などによって明確に保護されていない場合": "禁止",
+"ただし合法的なフェアユース原則の下で、帰属を記さずに再利用する場合": {
+"Properties": ["Condition"],
+"デフォルト": "非倫理的ではない"
+}
+}
+},
+"個人情報": {
+"その他": {
+"取得および破棄の期間を明確に定義すること": "必須",
+"ユーザの承諾あるいは適切な認証を行うことなく、ユーザの電子的なデータ(メールやメッセージも含む)を取得、監視する手続きを行うこと": {
+"Properties": ["Condition"],
+"コメント": "これは自分自信のシステムにも影響するのかな？",
+"デフォルト": "禁止"
+}
+},
+"通常のシステム運用やメンテナンスの際に収集されたデータを開示すること": {
+"Properties": ["Condition"],
+"デフォルト": "禁止",
+"法律、組織の規則や本倫理指針に違反する証拠がある場合": {
+"適切な権威に対して開示すること": "非倫理的ではない",
+"誰彼構わず開示すること": "禁止"
+}
+},
+"明、あるいは暗に同意された合意を破棄するとき": {
+"Properties": ["Condition"],
+"自分の職積と関係ない情報でも、偶然入手してしまうこと": "禁止",
+"雇用者や顧客、ユーザの情報を含むこと": "禁止",
+"法律や本倫理指針に反しない限り、適切な権限を持つ者から要請された通りにすること": "非倫理的ではない"
+}
+}
+},
+"GR:MR(メンロレポート)": {
+"利害関係者": {
+"すべての利害関係/関係者を特定すること": "必須"
+},
+"ひとに敬意を払うことに関して、": {
+"被験者実験の際、事前に詳細を説明し合意を得るとき": {
+"コメント": "これらの項目は行きつ戻りつすることがある",
+"デフォルト": {
+"研究活動の意図した利益や研究が研究によってもたらされるリスクの詳細を述べること": "必須",
+"次のいずれかの方法を用いること": {
+"XOR": {
+"XOR": "研究の管理人（例：学会の会員の進行役、今倫理指針の責任者、国毎になど）がこのXORの子のうちで一つしか選ばなければいけません。",
+"明確に記述された、または口頭による同意があること": "必須",
+"明確に記載された文書を用意すること": "必須"
+},
+"8位以下のレベルに抑えた言語を用いること": "必須"
+},
+"被験者を強要すること": {
+"Properties": ["Condition"],
+"デフォルト": "禁止"
+},
+"ひとつの研究目的以外に利用すること": {
+"Properties": ["Condition"],
+"デフォルト": "禁止"
+},
+"被験者集団の代表からの同意をとること": {
+"Properties": ["Condition"],
+"デフォルト": "禁止",
+"包括的な同意を得るために、ネットワークの利用者と直接契約を結んでいるサービスプロバイダと協力すること": {
+
+"ただし、それがメンロレポート C4と同等条件であること": "非倫理的ではない"
+}
+}
+},
+"倫理委員会が研究者に免除を与えるとき、": {
+"研究が被験者に対して、最小限以上のリスクを負わせること": {
+"Properties": ["Condition"],
+"デフォルト": "禁止"
+},
+"免除や修正を行うことで、被験者の権利を毀損すること": {
+"Properties": ["Condition"],
+"デフォルト": "禁止"
+},
+"その免除や修正なしに、研究が実行されること": {
+"Properties": ["Condition"],
+"デフォルト": "禁止"
+},
+"事後に被験者に通知すること": "必須",
+"必要なときはいつでも、実験に参加した被験者に適切な情報を提供すること": "必須",
+"同意を取得することができない既存のデータを用いる場合": {
+"データ保護を行い、個人応報を削除すること": "必須"
+}
+}
+},
+"ユーザに主体性を持たせるために": {
+"データの主体が直接的に、それ自身のデータを破棄すること": {
+"Properties": ["Condition"],
+"参照": {
+"Harkous": "The Curious Case of the PDF Converter That Likes Mozart"
+},
+"基本的には": "非倫理的ではない",
+"ただし、特殊な場合には": "必須"
+},
+"倫理委員会によって、実験後の事後報告が不要と判断されない場合": {
+"Properties": ["Condition"],
+"事後報告を実施すること": "必須",
+"事後報告を実施しないこと": "非倫理的ではない"
+}
+}
+},
+"研究から得られる恩恵とリスク": {
+"コメント": "メンロレポートの C3 とACMの倫理規範を見よ",
+"研究活動から生じる潜在的な危険性を特定すること": "必須",
+"危害の実現を低減すること": "必須"
+},
+"中立性と公平性": {
+"コメント": "メンロレポートの C4 を見よ",
+"個人に対する偏見や差別を持つこと": {
+"Properties": ["Condition"],
+"デフォルト": "禁止"
+},
+"研究に参加した個人および社会における利益やリスクの公平性を持つこと": "必須"
+},
+"法律と公共の利益": {
+"研究を通して、法律や契約などを尊重すること": {
+"コメント": [
+"以下のようなルールを含む",
+"なりすまし",
+"要求されていない大量の電子メール",
+"電子的な通信におけるプライバシー",
+"セキュリティブリーチの通知",
+"著作権やその他の知的財産の侵害",
+"データセキュリティと破壊",
+"児童ポルノ",
+"スパイウェアとフィッシング",
+"詐欺的な欺瞞",
+"経済的なプライバシー",
+"経済的な諜報活動",
+"憲法に規定されたプライバシー",
+"健康情報のセキュリティとプライバシー",
+"業界的な標準とベストプラクティス",
+"契約的なプライバシーと受容できる利用のポリシー"
+],
+"デフォルト": "必須"
+},
+"責任能力": {
+"コメント": "いつどのようにどう判断するかについての知見を蓄積し共有することについては、メンロレポート C.5.2 および C4 を見よ。",
+"研究手法、倫理的な評価、データの収集及び結果の生産について": {
+"恩恵のガイドラインに準拠するとき": {
+"文書化すること": "必須",
+"責任を持つこと": "必須"
+}
+}
+}
+}
+}
+}
+}
+}

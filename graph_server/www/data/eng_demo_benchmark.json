@@ -1,0 +1,1158 @@
+{
+    "Category": {
+        "SE(Software Examination)": {
+            "SE:VR(Vulnerability Research)": {
+                "SE:VR:1(Attempting to discover vulnerabilities/attacks, or executing exploits on)": {
+                    "SE:VR:1:1(closed protocols or specifications (including cryptographic ones))": {
+                        "References": {
+                            "UI3DTACP": "UI3DTACP"
+                        },
+                        "SE:VR:1:1:c1(Default)": "Grey"
+                    },
+                    "SE:VR:1:2(open-source material)": {
+                        "References": {
+                            "Bhargavan": "On the Practical (In-)Security of 64-Bit Block Ciphers",
+                            "Bianchi": "What the App Is That?",
+                            "Biryukov": "Trawling for Tor Hidden Services",
+                            "Bittau": "Hacking Blind",
+                            "Buyukkayhan": "CrossFire",
+                            "Cao": "Off-Path TCP Exploits",
+                            "Grubbs": "Breaking Web Applications Built On Top of Encrypted Data",
+                            "Irazoqui": "Know Thy Neighbor",
+                            "Shaik": "Practical Attacks Against Privacy and Availability in 4G/LTE Mobile Communication Systems",
+                            "Wang": "Call Me Back!"
+                        },
+                        "SE:VR:1:2:c1(with consent (e.g. adhere to ToS, bug bounty, direct consent, etc.))": "Permits",
+                        "SE:VR:1:2:c2(without express consent per se (e.g. no notice/consent, etc.))": "Permits",
+                        "SE:VR:1:2:c3(in violation of ToS/license,etc. (e.g. break ToS, no direct consent, etc.))": "Grey"
+                    },
+                    "SE:VR:1:3(non-open-source implementations)": {
+                        "References": {
+                            "Deshotels": "SandScout"
+                        },
+                        "SE:VR:1:3:c1(with consent (e.g. adhere to ToS, bug bounty, direct consent, etc.))": "Permits",
+                        "SE:VR:1:3:c2(without express consent per se (e.g. no notice/consent, etc.))": "Prohibits",
+                        "SE:VR:1:3:c3(in violation of ToS/license,etc. (e.g. break ToS, no direct consent, etc.))": "Prohibits"
+                    }
+                }
+            },
+            "SE:RE(Reverse Engineering)": {
+                "References": {
+                    "EFF": "https://www.eff.org/issues/coders/reverse-engineering-faq",
+                    "Japan Law": "Copyright Act, Design Act"
+                },
+                "SE:RE:1(with consent, (e.g. open source))": {
+                    "References": {
+                        "Bao": "ByteWeight",
+                        "Jang": "Towards Automatic Software Lineage Inference"
+                    },
+                    "SE:RE:1:c1(Default)": "Permits"
+                },
+                "SE:RE:2(without express consent per se)": {
+                    "References": {
+                        "Deshotels": "SandScout",
+                        "Eshete": "EKHunter"
+                    },
+                    "SE:RE:2:1(a closed protocol or specification (including cryptographic ones))": {
+                        "References": {
+                            "UI3DTACP": "UI3DTACP"
+                        },
+                        "SE:RE:2:1:c1(Default)": "Grey"
+                    },
+                    "SE:RE:2:c1(Default)": "Grey"
+                },
+                "SE:RE:3(in violation of ToS/license,etc.)": {
+                    "References": {
+                        "U.S Law": "DMCA",
+                        "TechCrunch": "Apple Announces Long-Awaited Bug Bounty Program",
+                        "Christie": "Maximising Permissible Exceptions to Intellectual Property Rights",
+                        "Wikipedia": "https://en.wikibooks.org/wiki/Reverse_Engineering/Legal_Aspects",
+                        "Gilbert-Macmillan": "Intellectual Property Law for Reverse Engineering Computer Programs in the European Community",
+                        "EU Law": "EU Directive 2009/24"
+                    },
+                    "SE:RE:3:c1(For interoperability)": "Permits",
+                    "SE:RE:3:1(If malware)": {
+                        "References": {
+                            "Eshete": "EKHunter",
+                            "Jang": "Towards Automatic Software Lineage Inference",
+                            "Yakdan": "Helping Johnny to Analyze Malware"
+                        },
+                        "SE:RE:3:1:c1(Default)": "Permits"
+                    },
+                    "SE:RE:3:c2(Default)": "Prohibits"
+                }
+            },
+            "SE:MW(Malware)": {
+                "References": {
+                    "Buyukkayhan": "CrossFire"
+                },
+                "SE:MW:1(Implementing proof of concept exploits in your own lab (without publishing them))": {
+                    "References": {
+                        "UI3DTACP": "UI3DTACP"
+                    },
+                    "SE:MW:1:c1(Default)": "Grey"
+                },
+                "SE:MW:2(Creating a tool that automates part or all of hacking [e.g. exploit-generators][separate from distributing such tools])": {
+                    "References": {
+                        "Bittau": "Hacking Blind",
+                        "Eshete": "EKHunter",
+                        "Snow": "Just-In-Time Code Reuse"
+                    },
+                    "SE:MW:2:c1(Default)": "Permits"
+                },
+                "SE:MW:3(Posting, sending, publishing, or otherwise distributing malware)": {
+                    "References": {
+                        "Wang": "Jekyll on iOS"
+                    },
+                    "XOR": {
+                        "XOR": "A research authority, such as the head of an ethics committee, or even on a per-country basis, or else the maintainer of this benchmark, must select from one of the choices under an XOR node, to apply consistently in all cases.",
+                        "SE:MW:3:1(in certain places)": {
+                            "note": "App Stores, Public Code Repositories, Email, etc.",
+                            "XOR": {
+                                "XOR": "A research authority, such as the head of an ethics committee, or even on a per-country basis, or else the maintainer of this benchmark, must select from one of the choices under an XOR node, to apply consistently in all cases.",
+                                "SE:MW:3:1:1(for an extended period)": {
+                                    "SE:MW:3:1:1:c1(with consent)": "Grey",
+                                    "SE:MW:3:1:1:c2(without express consent per se)": "Grey",
+                                    "SE:MW:3:1:1:c3(in violation of ToS/license,etc.)": "Grey"
+                                },
+                                "SE:MW:3:1:2(briefly)": {
+                                    "SE:MW:3:1:2:c1(with consent)": "Permits",
+                                    "SE:MW:3:1:2:c2(without express consent per se)": "Grey",
+                                    "SE:MW:3:1:2:c3(in violation of ToS/license,etc.)": "Grey"
+                                }
+                            }
+                        },
+                        "SE:MW:3:2(everywhere)": {
+                            "XOR": {
+                                "XOR": "A research authority, such as the head of an ethics committee, or even on a per-country basis, or else the maintainer of this benchmark, must select from one of the choices under an XOR node, to apply consistently in all cases.",
+                                "SE:MW:3:2:1(for an extended period)": {
+                                    "SE:MW:3:2:1:c1(with consent)": "Grey",
+                                    "SE:MW:3:2:1:c2(without express consent per se)": "Grey",
+                                    "SE:MW:3:2:1:c3(in violation of ToS/license,etc.)": "Grey"
+                                },
+                                "SE:MW:3:2:2(briefly)": {
+                                    "SE:MW:3:2:2:1(with consent)": {
+                                        "SE:MW:3:2:2:1:c1(If it does not affect or become downloaded by anyone else)": "Permits"
+                                    },
+                                    "SE:MW:3:2:2:c1(without express consent per se)": "Grey",
+                                    "SE:MW:3:2:2:c2(in violation of ToS/license,etc.)": "Grey"
+                                }
+                            }
+                        }
+                    }
+                },
+                "SE:MW:4(Infecting computers with malware（executing/installing))": {
+                    "References": {
+                        "Simon": "Don't Interrupt Me While I Type"
+                    },
+                    "SE:MW:4:c1(with consent)": "Permits",
+                    "SE:MW:4:c2(without express consent per se)": "Prohibits",
+                    "SE:MW:4:1(in violation of ToS/license,etc.)": {
+                        "SE:MW:4:1:c1(Default)": "Prohibits"
+                    }
+                },
+                "SE:MW:5(Causing malware to run (including dynamic analysis))": {
+                    "References": {
+                        "Jang": "Towards Automatic Software Lineage Inference",
+                        "Li": "Hunting the Red Fox Online",
+                        "WR32NB34": "WR32NB34",
+                        "W8BN2RG9": "W8BN2RG9"
+                    },
+                    "SE:MW:5:c1(if it creates additional externalities (for example, malware on public and/or popular webpage content))": "Prohibits",
+                    "SE:MW:5:c2(Conducting research that is likely to cause malware to non-passively connect to networks)": "Prohibits",
+                    "SE:MW:5:c3(Ensuring that malware installed on your system does not cause additional uncontained malware to be downloaded/installed/executed)": "Recommended",
+                    "SE:MW:5:c4(Installing/running malware in a sandbox)": "Permits"
+                }
+            },
+            "SE:DI(Vulnerability Publication and Disclosure)": {
+                "References": {
+                    "Bhargavan": "On the Practical (In-)Security of 64-Bit Block Ciphers",
+                    "Bianchi": "What the App Is That?",
+                    "Biryukov": "Trawling for Tor Hidden Services",
+                    "Eshete": "EKHunter",
+                    "Simon": "Don't Interrupt Me While I Type",
+                    "Deshotels": "SandScout",
+                    "Wang1": "Call Me Back!",
+                    "Wang2": "Jekyll on iOS",
+                    "Liao": "Lurking Malice in the Cloud",
+                    "Yang": "The Ever-Changing Labyrinth",
+                    "Li": "Hunting the Red Fox Online",
+                    "Liu": "All Your DNS Records Point to Us",
+                    "Shaik": "Practical Attacks Against Privacy and Availability in 4G/LTE Mobile Communication Systems",
+                    "Thomas": "Ad Injection at Scale"
+                },
+                "SE:DI:c1(Private disclosure to the vendor, maintainer, or other stakeholders)": "Demands",
+                "SE:DI:1(Private Disclosure to Maintainer or Vendor)": {
+                    "References": {
+                        "SANS": "https://www.sans.org/reading-room/whitepapers/threats/define-responsible-disclosure-932",
+                        "NCSC": "Responsible Disclosure Guideline",
+                        "CERT": "Vulnerability Disclosure Policy"
+                    },
+                    "SE:DI:1:c1(doing so before publication)": "Demands",
+                    "SE:DI:1:c2(with full extent of vulnerability details)": "Demands",
+                    "SE:DI:1:c3(attempting to establish a public disclosure deadline/grace period (default 30-60 days))": "Demands",
+                    "SE:DI:1:c4(using secure communication)": "Recommended",
+                    "SE:DI:1:c5(contacting or disclosing to affected parties)": "Recommended",
+                    "SE:DI:1:1(if the vulnerability is a zero-day)": {
+                        "SE:DI:1:1:1(Default)": {
+                            "SE:DI:1:1:1:c1(Contacting or disclosing to uninvolved researchers or other non-stakeholders)": "Prohibits",
+                            "SE:DI:1:1:1:1(publishing without waiting for a reply from the vendor)": {
+                                "SE:DI:1:1:1:1:c1(within a deadline/grace period)": "Prohibits",
+                                "SE:DI:1:1:1:1:c2(after a deadline/grace period)": "Permits"
+                            }
+                        },
+                        "SE:DI:1:1:2(if the vulnerability is being exploited already)": {
+                            "SE:DI:1:1:2:c1(contacting or disclosing to uninvolved researchers or other non-stakeholders,)": "Recommended",
+                            "SE:DI:1:1:2:c2(before publication)": "Permits",
+                            "SE:DI:1:1:2:c3(publishing without waiting for a reply from the vendor)": "Permits",
+                            "SE:DI:1:1:2:c4(publishing without waiting for a patch)": "Permits"
+                        }
+                    },
+                    "SE:DI:1:2(publishing without waiting for a patch)": {
+                        "SE:DI:1:2:c1(within a deadline/grace period)": "Prohibits",
+                        "SE:DI:1:2:1(after a deadline/grace period)": {
+                            "SE:DI:1:2:1:c1(if vendor is cooperating)": "Prohibits",
+                            "SE:DI:1:2:1:c2(if vendor is not cooperating)": "Permits"
+                        }
+                    }
+                },
+                "SE:DI:2(Public Disclosure (e.g. a research paper, online, etc.))": {
+                    "References": {
+                        "Bittau": "Hacking Blind",
+                        "Buyukkayhan": "CrossFire",
+                        "Grubbs": "Breaking Web Applications Built On Top of Encrypted Data",
+                        "Snow": "Just-In-Time Code Reuse"
+                    },
+                    "SE:DI:2:c1(Including fully-functional novel or modified malicious code)": "Prohibits",
+                    "SE:DI:2:c2(Including snippets of novel or modified malicious code)": "Grey",
+                    "SE:DI:2:c3(Including exploit code)": "Prohibits",
+                    "SE:DI:2:c4(Including theory or explanation)": "Demands",
+                    "SE:DI:2:c5(Including full extent of vulnerability details)": "Demands",
+                    "SE:DI:2:c6(Including solution or proposed solution if it exists)": "Demands",
+                    "SE:DI:2:1(if the vulnerability is a zero-day)": {
+                        "SE:DI:2:1:c1(Publishing or disclosing prior to or concurrent with contacting the vendor (see Private Disclosure))": "Prohibits"
+                    },
+                    "SE:DI:2:2(if the vulnerability is being exploited already)": {
+                        "SE:DI:2:2:c1(Publishing or disclosing prior to or concurrent with contacting the vendor (see Private Disclosure))": "Permits"
+                    }
+                }
+            }
+        },
+        "PR(Privacy)": {
+            "note": "this does not currently distinguish between PII and other data/activity/information/traffic",
+            "PR:CD(Collecting Data)": {
+                "PR:CD:1(about ordinary humans and animals)": {
+                    "PR:CD:1:1(obtaining data via an informed notice/consent process (such as that consistent with the Menlo Report or ACM Code of Ethics - possibly with deception and debriefing))": {
+                        "References": {
+                            "Blythe": "Unpacking security policy compliance",
+                            "Gulyas": "Near-Optimal Fingerprinting with Constraints",
+                            "Hardy": "Targeted Threat Index",
+                            "Park": "Scambaiter",
+                            "Reaves": "Boxed Out",
+                            "Shoshitaishvili": "Portrait of a Privacy Invasion",
+                            "Thomas": "Ad Injection at Scale"
+                        },
+                        "PR:CD:1:1:c1(Default)": "Demands"
+                    },
+                    "PR:CD:1:2(as part of a separate service not specifically for collecting that data (e.g. which gives bonus incentives))": {
+                        "References": {
+                            "Almuhimedi": "Your Reputation Precedes You",
+                            "Lee": "You Are a Game Bot!",
+                            "Park": "Scambaiter",
+                            "Shoshitaishvili": "Portrait of a Privacy Invasion"
+                        },
+                        "PR:CD:1:2:c1(Default)": "Prohibits"
+                    },
+                    "PR:CD:1:3(signing research agreements limiting the use of data to the current experiment)": {
+                        "References": {
+                            "Gulyas": "Near-Optimal Fingerprinting with Constraints"
+                        },
+                        "PR:CD:1:3:c1(Default)": "Demands"
+                    },
+                    "PR:CD:1:4(Feasibly minimizing the data collected/stored to only what is necessary)": {
+                        "References": {
+                            "Almuhimedi": "Your Reputation Precedes You",
+                            "Grimm": "Survey on the Fate of Digital Footprints after Death",
+                            "Gulyas": "Near-Optimal Fingerprinting with Constraints",
+                            "Kaczmarek": "An Unattended Study of Users Performing Security Critical Tasks under Adversarial Noise",
+                            "Nakibly": "Website-Targeted False Content Injection by Network Operators",
+                            "Liao": "Lurking Malice in the Cloud",
+                            "Park": "Scambaiter",
+                            "Shoshitaishvili": "Portrait of a Privacy Invasion",
+                            "Yang": "The Ever-Changing Labyrinth",
+                            "Simon": "Don't Interrupt Me While I Type"
+                        },
+                        "PR:CD:1:4:c1(Default)": "Demands",
+                        "PR:CD:1:4:c2(and technically minimizing what is collected at collection-time, prior to storage or analysis)": "Demands"
+                    }
+                },
+                "PR:CD:2(about assumed criminals)": {
+                    "PR:CD:2:1(if the data is collected via the subjects trespassing on your system)": {
+                        "PR:CD:2:1:1(obtaining data via an informed notice/consent process (such as that consistent with the Menlo Report or ACM Code of Ethics - possibly with deception and debriefing))": {
+                            "References": {
+                                "Blythe": "Unpacking security policy compliance",
+                                "Gulyas": "Near-Optimal Fingerprinting with Constraints",
+                                "Hardy": "Targeted Threat Index",
+                                "Park": "Scambaiter",
+                                "Reaves": "Boxed Out",
+                                "Shoshitaishvili": "Portrait of a Privacy Invasion",
+                                "Thomas": "Ad Injection at Scale"
+                            },
+                            "PR:CD:2:1:1:c1(Default)": "Recommended"
+                        },
+                        "PR:CD:2:1:2(as part of a separate service not specifically for collecting that data (e.g. which gives bonus incentives))": {
+                            "References": {
+                                "Almuhimedi": "Your Reputation Precedes You",
+                                "Lee": "You Are a Game Bot!",
+                                "Park": "Scambaiter",
+                                "Shoshitaishvili": "Portrait of a Privacy Invasion"
+                            },
+                            "PR:CD:2:1:2:c1(Default)": "Grey"
+                        },
+                        "PR:CD:2:1:3(signing research agreements limiting the use of data to the current experiment)": {
+                            "References": {
+                                "Gulyas": "Near-Optimal Fingerprinting with Constraints"
+                            },
+                            "PR:CD:2:1:3:c1(Default)": "Recommended"
+                        },
+                        "PR:CD:2:1:4(Feasibly minimizing the data collected/stored to only what is necessary)": {
+                            "References": {
+                                "Almuhimedi": "Your Reputation Precedes You",
+                                "Grimm": "Survey on the Fate of Digital Footprints after Death",
+                                "Gulyas": "Near-Optimal Fingerprinting with Constraints",
+                                "Kaczmarek": "An Unattended Study of Users Performing Security Critical Tasks under Adversarial Noise",
+                                "Nakibly": "Website-Targeted False Content Injection by Network Operators",
+                                "Liao": "Lurking Malice in the Cloud",
+                                "Park": "Scambaiter",
+                                "Shoshitaishvili": "Portrait of a Privacy Invasion",
+                                "Yang": "The Ever-Changing Labyrinth",
+                                "Simon": "Don't Interrupt Me While I Type"
+                            },
+                            "PR:CD:2:1:4:c1(Default)": "Recommended",
+                            "PR:CD:2:1:4:c2(and technically minimizing what is collected at collection-time, prior to storage or analysis)": "Recommended"
+                        }
+                    },
+                    "PR:CD:2:2(Default)": {
+                        "PR:CD:2:2:1(obtaining data via an informed notice/consent process (such as that consistent with the Menlo Report or ACM Code of Ethics - possibly with deception and debriefing))": {
+                            "References": {
+                                "Blythe": "Unpacking security policy compliance",
+                                "Gulyas": "Near-Optimal Fingerprinting with Constraints",
+                                "Hardy": "Targeted Threat Index",
+                                "Park": "Scambaiter",
+                                "Reaves": "Boxed Out",
+                                "Shoshitaishvili": "Portrait of a Privacy Invasion",
+                                "Thomas": "Ad Injection at Scale"
+                            },
+                            "PR:CD:2:2:1:c1(Default)": "Recommended"
+                        },
+                        "PR:CD:2:2:2(as part of a separate service not specifically for collecting that data (e.g. which gives bonus incentives))": {
+                            "References": {
+                                "Almuhimedi": "Your Reputation Precedes You",
+                                "Lee": "You Are a Game Bot!",
+                                "Park": "Scambaiter",
+                                "Shoshitaishvili": "Portrait of a Privacy Invasion"
+                            },
+                            "PR:CD:2:2:2:c1(Default)": "Grey"
+                        },
+                        "PR:CD:2:2:3(signing research agreements limiting the use of data to the current experiment)": {
+                            "References": {
+                                "Gulyas": "Near-Optimal Fingerprinting with Constraints"
+                            },
+                            "PR:CD:2:2:3:c1(Default)": "Recommended"
+                        },
+                        "PR:CD:2:2:4(Feasibly minimizing the data collected/stored to only what is necessary)": {
+                            "References": {
+                                "Almuhimedi": "Your Reputation Precedes You",
+                                "Grimm": "Survey on the Fate of Digital Footprints after Death",
+                                "Gulyas": "Near-Optimal Fingerprinting with Constraints",
+                                "Kaczmarek": "An Unattended Study of Users Performing Security Critical Tasks under Adversarial Noise",
+                                "Nakibly": "Website-Targeted False Content Injection by Network Operators",
+                                "Liao": "Lurking Malice in the Cloud",
+                                "Park": "Scambaiter",
+                                "Shoshitaishvili": "Portrait of a Privacy Invasion",
+                                "Yang": "The Ever-Changing Labyrinth",
+                                "Simon": "Don't Interrupt Me While I Type"
+                            },
+                            "PR:CD:2:2:4:c1(Default)": "Recommended",
+                            "PR:CD:2:2:4:c2(and technically minimizing what is collected at collection-time, prior to storage or analysis)": "Recommended"
+                        }
+                    }
+                },
+                "PR:CD:3(about computer systems)": {
+                    "PR:CD:3:1(obtaining data via an informed notice/consent process (such as that consistent with the Menlo Report or ACM Code of Ethics - possibly with deception and debriefing))": {
+                        "References": {
+                            "Blythe": "Unpacking security policy compliance",
+                            "Gulyas": "Near-Optimal Fingerprinting with Constraints",
+                            "Hardy": "Targeted Threat Index",
+                            "Park": "Scambaiter",
+                            "Reaves": "Boxed Out",
+                            "Shoshitaishvili": "Portrait of a Privacy Invasion",
+                            "Thomas": "Ad Injection at Scale"
+                        },
+                        "PR:CD:3:1:c1(Default)": "Demands"
+                    },
+                    "PR:CD:3:2(as part of a separate service not specifically for collecting that data (e.g. which gives bonus incentives))": {
+                        "References": {
+                            "Almuhimedi": "Your Reputation Precedes You",
+                            "Lee": "You Are a Game Bot!",
+                            "Park": "Scambaiter",
+                            "Shoshitaishvili": "Portrait of a Privacy Invasion"
+                        },
+                        "PR:CD:3:2:c1(Default)": "Permits"
+                    },
+                    "PR:CD:3:3(signing research agreements limiting the use of data to the current experiment)": {
+                        "References": {
+                            "Gulyas": "Near-Optimal Fingerprinting with Constraints"
+                        },
+                        "PR:CD:3:3:c1(Default)": "Recommended"
+                    },
+                    "PR:CD:3:4(Feasibly minimizing the data collected/stored to only what is necessary)": {
+                        "References": {
+                            "Almuhimedi": "Your Reputation Precedes You",
+                            "Grimm": "Survey on the Fate of Digital Footprints after Death",
+                            "Gulyas": "Near-Optimal Fingerprinting with Constraints",
+                            "Kaczmarek": "An Unattended Study of Users Performing Security Critical Tasks under Adversarial Noise",
+                            "Nakibly": "Website-Targeted False Content Injection by Network Operators",
+                            "Liao": "Lurking Malice in the Cloud",
+                            "Park": "Scambaiter",
+                            "Shoshitaishvili": "Portrait of a Privacy Invasion",
+                            "Yang": "The Ever-Changing Labyrinth",
+                            "Simon": "Don't Interrupt Me While I Type"
+                        },
+                        "PR:CD:3:4:c1(Default)": "Demands",
+                        "PR:CD:3:4:c2(and technically minimizing what is collected at collection-time, prior to storage or analysis)": "Recommended"
+                    }
+                },
+                "PR:CD:4(Collecting data that was made publicly available without consent of the data owner, such as leaked passwords)": {
+                    "References": {
+                        "Li": "A Large-Scale Empirical Analysis of Chinese Web Passwords",
+                        "Wang3": "Targeted Online Password Guessing"
+                    },
+                    "PR:CD:4:c1(if it is irrevocably publicly known and available)": "Grey",
+                    "PR:CD:4:c2(Default)": "Grey"
+                },
+                "PR:CD:c1(Collecting data that is ambiguously public)": "Permits",
+                "PR:CD:5(Collecting passwords, pins, or other login information)": {
+                    "References": {
+                        "Schechter": "Learning Assigned Secrets for Unlocking Mobile Devices"
+                    },
+                    "PR:CD:5:c1(Default)": "Grey"
+                }
+            },
+            "PR:HD(Handling Data)": {
+                "References": {
+                    "Park": "Scambaiter",
+                    "Shoshitaishvili": "Portrait of a Privacy Invasion"
+                },
+                "PR:HD:1(Correlating or matching data)": {
+                    "PR:HD:1:c1(To re-identify individuals)": "Prohibits",
+                    "PR:HD:1:c2(About individuals but without re-identifying them)": "Permits"
+                },
+                "PR:HD:2(about ordinary humans and animals)": {
+                    "References": {
+                        "Harkous": "The Curious Case of the PDF Converter That Likes Mozart"
+                    },
+                    "PR:HD:2:c1(Encrypting such data at rest)": "Demands",
+                    "PR:HD:2:c2(Encrypting such data in transit)": "Demands",
+                    "PR:HD:2:1(Pseudonymizing/Anonymizing/Aggregating such data prior to analysis)": {
+                        "References": {
+                            "Almuhimedi": "Your Reputation Precedes You",
+                            "Gulyas": "Near-Optimal Fingerprinting with Constraints",
+                            "Kellaris": "Generic Attacks on Secure Outsourced Databases",
+                            "Lee": "You Are a Game Bot!",
+                            "Moreno-Sanchez": "Listening to Whispers of Ripple",
+                            "Nakibly": "Website-Targeted False Content Injection by Network Operators",
+                            "Reaves": "Sending Out an SMS"
+                        },
+                        "PR:HD:2:1:c1(Default)": "Demands"
+                    },
+                    "PR:HD:2:2(Minimizing data retention/Regarding retaining copies of collected data for the future)": {
+                        "References": {
+                            "Schreiber": "To Befriend Or Not?",
+                            "Hardy": "Targeted Threat Index",
+                            "Kaczmarek": "An Unattended Study of Users Performing Security Critical Tasks under Adversarial Noise",
+                            "Biryukov": "Trawling for Tor Hidden Services",
+                            "Liao": "Lurking Malice in the Cloud",
+                            "Li": "Hunting the Red Fox Online",
+                            "Thomas": "Ad Injection at Scale"
+                        },
+                        "PR:HD:2:2:c1(Deleting data as soon as possible after use (possibly immediately, even if it must be collected anew in case of error))": "Demands",
+                        "PR:HD:2:2:c2(Structuring the software pipeline to minimize retention time)": "Recommended",
+                        "PR:HD:2:2:c3(Deleting email or other information that was collected for temporary contact purposes with data subjects)": "Demands",
+                        "PR:HD:2:2:c4(Prioritizing such data-driven research so as to minimize retention time)": "Demands"
+                    }
+                },
+                "PR:HD:3(about assumed criminals)": {
+                    "PR:HD:3:1(if the data is collected via the subjects trespassing on your system)": {
+                        "PR:HD:3:1:c1(Encrypting such data at rest)": "Recommended",
+                        "PR:HD:3:1:1(Encrypting such data in transit)": {
+                            "References": {
+                                "Harkous": "The Curious Case of the PDF Converter That Likes Mozart"
+                            },
+                            "PR:HD:3:1:1:c1(Default)": "Recommended"
+                        },
+                        "PR:HD:3:1:2(Pseudonymizing/Anonymizing/Aggregating such data prior to analysis)": {
+                            "References": {
+                                "Almuhimedi": "Your Reputation Precedes You",
+                                "Gulyas": "Near-Optimal Fingerprinting with Constraints",
+                                "Kellaris": "Generic Attacks on Secure Outsourced Databases",
+                                "Lee": "You Are a Game Bot!",
+                                "Moreno-Sanchez": "Listening to Whispers of Ripple",
+                                "Nakibly": "Website-Targeted False Content Injection by Network Operators",
+                                "Reaves": "Sending Out an SMS"
+                            },
+                            "PR:HD:3:1:2:c1(Default)": "Recommended"
+                        },
+                        "PR:HD:3:1:3(Minimizing data retention/Regarding retaining copies of collected data for the future)": {
+                            "References": {
+                                "Schreiber": "To Befriend Or Not?",
+                                "Hardy": "Targeted Threat Index",
+                                "Kaczmarek": "An Unattended Study of Users Performing Security Critical Tasks under Adversarial Noise",
+                                "Biryukov": "Trawling for Tor Hidden Services",
+                                "Liao": "Lurking Malice in the Cloud",
+                                "Li": "Hunting the Red Fox Online",
+                                "Thomas": "Ad Injection at Scale"
+                            },
+                            "PR:HD:3:1:3:c1(Deleting data as soon as possible after use (possibly immediately, even if it must be collected anew in case of error))": "Recommended",
+                            "PR:HD:3:1:3:c2(Deleting email or other information that was collected for temporary contact purposes with data subjects)": "Recommended",
+                            "PR:HD:3:1:3:c3(Structuring the software pipeline to minimize retention time)": "Recommended",
+                            "PR:HD:3:1:3:c4(Prioritizing such data-driven research so as to minimize retention time)": "Recommended"
+                        }
+                    },
+                    "PR:HD:3:2(Default)": {
+                        "PR:HD:3:2:c1(Encrypting such data at rest)": "Recommended",
+                        "PR:HD:3:2:1(Encrypting such data in transit)": {
+                            "References": {
+                                "Harkous": "The Curious Case of the PDF Converter That Likes Mozart"
+                            },
+                            "PR:HD:3:2:1:c1(Default)": "Recommended"
+                        },
+                        "PR:HD:3:2:2(Pseudonymizing/Anonymizing/Aggregating such data prior to analysis)": {
+                            "References": {
+                                "Almuhimedi": "Your Reputation Precedes You",
+                                "Gulyas": "Near-Optimal Fingerprinting with Constraints",
+                                "Kellaris": "Generic Attacks on Secure Outsourced Databases",
+                                "Lee": "You Are a Game Bot!",
+                                "Moreno-Sanchez": "Listening to Whispers of Ripple",
+                                "Nakibly": "Website-Targeted False Content Injection by Network Operators",
+                                "Reaves": "Sending Out an SMS"
+                            },
+                            "PR:HD:3:2:2:c1(Default)": "Demands"
+                        },
+                        "PR:HD:3:2:3(Minimizing data retention/Regarding retaining copies of collected data for the future)": {
+                            "References": {
+                                "Schreiber": "To Befriend Or Not?",
+                                "Hardy": "Targeted Threat Index",
+                                "Kaczmarek": "An Unattended Study of Users Performing Security Critical Tasks under Adversarial Noise",
+                                "Biryukov": "Trawling for Tor Hidden Services",
+                                "Liao": "Lurking Malice in the Cloud",
+                                "Li": "Hunting the Red Fox Online",
+                                "Thomas": "Ad Injection at Scale"
+                            },
+                            "PR:HD:3:2:3:c1(Deleting data as soon as possible after use (possibly immediately, even if it must be collected anew in case of error))": "Recommended",
+                            "PR:HD:3:2:3:c2(Deleting email or other information that was collected for temporary contact purposes with data subjects)": "Recommended",
+                            "PR:HD:3:2:3:c3(Structuring the software pipeline to minimize retention time)": "Recommended",
+                            "PR:HD:3:2:3:c4(Prioritizing such data-driven research so as to minimize retention time)": "Recommended"
+                        }
+                    }
+                },
+                "PR:HD:4(about computer systems)": {
+                    "PR:HD:4:c1(Encrypting such data at rest)": "Recommended",
+                    "PR:HD:4:1(Encrypting such data in transit)": {
+                        "References": {
+                            "Harkous": "The Curious Case of the PDF Converter That Likes Mozart"
+                        },
+                        "PR:HD:4:1:c1(Default)": "Recommended"
+                    },
+                    "PR:HD:4:2(Pseudonymizing/Anonymizing/Aggregating such data prior to analysis)": {
+                        "References": {
+                            "Almuhimedi": "Your Reputation Precedes You",
+                            "Gulyas": "Near-Optimal Fingerprinting with Constraints",
+                            "Kellaris": "Generic Attacks on Secure Outsourced Databases",
+                            "Lee": "You Are a Game Bot!",
+                            "Moreno-Sanchez": "Listening to Whispers of Ripple",
+                            "Nakibly": "Website-Targeted False Content Injection by Network Operators",
+                            "Reaves": "Sending Out an SMS"
+                        },
+                        "PR:HD:4:2:c1(Default)": "Demands"
+                    },
+                    "PR:HD:4:3(Minimizing data retention/Regarding retaining copies of collected data for the future)": {
+                        "References": {
+                            "Schreiber": "To Befriend Or Not?",
+                            "Hardy": "Targeted Threat Index",
+                            "Kaczmarek": "An Unattended Study of Users Performing Security Critical Tasks under Adversarial Noise",
+                            "Biryukov": "Trawling for Tor Hidden Services",
+                            "Liao": "Lurking Malice in the Cloud",
+                            "QERTHZDV": "QERTHZDV",
+                            "ZGLABD7U": "ZGLABD7U",
+                            "Li": "Hunting the Red Fox Online",
+                            "Thomas": "Ad Injection at Scale"
+                        },
+                        "PR:HD:4:3:c1(Deleting data as soon as possible after use (possibly immediately, even if it must be collected anew in case of error))": "Recommended",
+                        "PR:HD:4:3:c2(Structuring the software pipeline to minimize retention time)": "Recommended",
+                        "PR:HD:4:3:c3(Deleting email or other information that was collected for temporary contact purposes with data subjects)": "Demands",
+                        "PR:HD:4:3:c4(Prioritizing such data-driven research so as to minimize retention time)": "Demands"
+                    }
+                }
+            },
+            "PR:PD(Publishing Data)": {
+                "References": {
+                    "Diao": "No Pardon for the Interruption",
+                    "Reaves": "Sending Out an SMS",
+                    "Harkous": "The Curious Case of the PDF Converter That Likes Mozart"
+                },
+                "PR:PD:c1(about ordinary humans and animals)": "Prohibits",
+                "PR:PD:1(about assumed criminals)": {
+                    "PR:PD:1:c1(Default)": "Grey",
+                    "PR:PD:1:c2(if the data is collected via the subjects trespassing on your system)": "Grey"
+                },
+                "PR:PD:c2(about computer systems)": "Grey"
+            },
+            "PR:TD(Transferring Data To Third Parties)": {
+                "References": {
+                    "Japan Law": "Act on the Protection of Personal Information",
+                    "Thomas": "Ad Injection at Scale"
+                },
+                "PR:TD:c1(Default)": "Prohibits",
+                "PR:TD:c2(obtaining transfer date, recipient name, and other information required by Japanese law)": "Demands",
+                "PR:TD:1(when the transfer comports with Japanese law such as when)": {
+                    "PR:TD:1:c1(Opt-out consent has effectively been obtained)": "Permits",
+                    "PR:TD:1:c2(disclosing to a itakusaki/fiduciary/trustee)": "Permits"
+                }
+            }
+        },
+        "AU(Autonomy)": {
+            "AU:WS(Public Network,Infrastructure Use,Web scraping,Internet scanning)": {
+                "References": {
+                    "Biryukov": "Trawling for Tor Hidden Services",
+                    "Brookman": "Cross-Device Tracking",
+                    "Harkous": "The Curious Case of the PDF Converter That Likes Mozart",
+                    "Liao": "Lurking Malice in the Cloud",
+                    "Li": "Hunting the Red Fox Online",
+                    "Liu": "All Your DNS Records Point to Us",
+                    "McPherson": "CovertCast",
+                    "Nakibly": "Website-Targeted False Content Injection by Network Operators",
+                    "Weinberg": "Topics of Controversy",
+                    "Zhang": "On the Mismanagement and Maliciousness of Networks"
+                },
+                "AU:WS:1(violating and working around a sites’ robots.txt)": {
+                    "AU:WS:1:c1(with express consent)": "Permits",
+                    "AU:WS:1:c2(without express consent per se)": "Grey"
+                },
+                "AU:WS:2(Network Scanning)": {
+                    "References": {
+                        "JA8WXYD2": "JA8WXYD2",
+                        "W8BN2RG9": "W8BN2RG9",
+                        "U4VMQUWP": "U4VMQUWP",
+                        "2XCACQFQ": "2XCACQFQ",
+                        "WR32NB34": "WR32NB34",
+                        "IFPSF5VP": "IFPSF5VP",
+                        "UNXDTW3P": "UNXDTW3P"
+                    },
+                    "AU:WS:2:c1(Verify that scans will not overwhelm the local network or upstream provider)": "Recommended",
+                    "AU:WS:2:c2(Actively scanning others’ network systems/the Internet)": "Permits",
+                    "AU:WS:2:c3(Throttling requests to reduce impact as necessary)": "Demands",
+                    "AU:WS:2:c4(Saving IP or MAC addresses with collected traffic)": "Grey",
+                    "AU:WS:2:c5(Using a pre-prepared blacklist/whitelist (i.e. restricting targets) of hosts when communicating/sending traffic)": "Demands",
+                    "AU:WS:2:c6(Maintain a blacklist by providing a simple means of opting out of scans, and honor requests promptly)": "Demands",
+                    "AU:WS:2:c7(Coordinate closely with local network admins to reduce risks and handle inquiries)": "Demands",
+                    "AU:WS:2:c8(Verifying that traffic your assets send during your research is not malicious)": "Recommended",
+                    "AU:WS:2:c9(Sending spoofed traffic)": "Grey",
+                    "AU:WS:2:1(Providing information for the current scan/study in all communications for interested/affected parties/participants unless deception or withholding such information is necessary)": {
+                        "AU:WS:2:1:c1(Providing a means of accessing a webpage or other notice about the nature/scope/purpose of the study itself)": "Demands",
+                        "AU:WS:2:1:c2(Providing the researchers' contact information)": "Demands"
+                    }
+                },
+                "AU:WS:3(Web Scraping)": {
+                    "References": {
+                        "4ZFSJ3FE": "4ZFSJ3FE",
+                        "WFFE6CJY": "WFFE6CJY"
+                    },
+                    "AU:WS:3:c1(scraping excessively (e.g. such that the site loses service, irrespective of the robots.txt, not within a human-scale timespan, etc.))": "Prohibits",
+                    "AU:WS:3:c2(Attempting to scrape/crawl an entire website)": "Grey",
+                    "AU:WS:3:c3(Scraping/crawling the same website/webpage(s) repeatedly)": "Grey"
+                },
+                "AU:WS:c1(Excessive use of shared network resources (e.g. Tor nodes))": "Grey",
+                "AU:WS:4(Try to minimize impact on infrastructure, websites, and networks, such as by trying alternative methods like passive collection, simulation, or using archives or existing datasets first)": {
+                    "References": {
+                        "Basescu": "SIBRA",
+                        "Reaves": "Boxed Out",
+                        "Sahin": "Over-The-Top Bypass",
+                        "Thomas": "Ad Injection at Scale",
+                        "Zhang": "On the Mismanagement and Maliciousness of Networks"
+                    },
+                    "AU:WS:4:c1(Default)": "Demands"
+                },
+                "AU:WS:c2(Automatically visiting multiple sites (possibly in rapid succession) only a single time (and ideally only a single page))": "Permits"
+            },
+            "AU:BI(Accessing,Trespassing)": {
+                "note": "Knowingly or negligently accessing or controlling others' systems beyond normal network operations",
+                "References": {
+                    "IFPSF5VP": "IFPSF5VP",
+                    "ZRAC7H62": "ZRAC7H62",
+                    "WR32NB34": "WR32NB34",
+                    "F84G4WXA": "F84G4WXA",
+                    "Biryukov": "Trawling for Tor Hidden Services",
+                    "Cao": "Off-Path TCP Exploits",
+                    "Rossow": "SoK: P2PWNED",
+                    "Lian": "Measuring the Practical Impact of DNSSEC Deployment",
+                    "Aycock": "Why 'No Worse Off' Is Worse Off",
+                    "Schrittwieser": "Ethics in Security Research"
+                },
+                "AU:BI:c1(Minimizing the induced load/burden on others' systems)": "Demands",
+                "AU:BI:c2(Installing programs onto another person’s assets)": "Grey",
+                "AU:BI:c3(Executing a program or having code automatically execute on someone’s asset without their express consent (e.g. browser code, a scheduler, autorunning a USB program, etc.))": "Grey",
+                "AU:BI:c4(Working directly with the owner to study a third party’s service or asset of interest)": "Recommended",
+                "AU:BI:c5(Executing programs or calculations involving private data on the owner/fiduciary’s devices instead of your own, or working on-site to prevent data leakage)": "Demands",
+                "AU:BI:c6(Loading web content (e.g. even if non-harmful) in a user's browser on a website they have consensually navigated to)": "Grey",
+                "AU:BI:1(Accessing someone else’s account (i.e. on a website) without their consent to access it at that time)": {
+                    "References": {
+                        "Li": "A Large-Scale Empirical Analysis of Chinese Web Passwords",
+                        "Reaves": "Sending Out an SMS"
+                    },
+                    "AU:BI:1:c1(Default)": "Prohibits"
+                },
+                "AU:BI:2(with permission of rightful owners or authorities, and just cause (e.g. police warrant - but law alone is not sufficient))": {
+                    "AU:BI:2:1(if the systems are being used for illegal activities by third parties)": {
+                        "AU:BI:2:1:c1(if you do not have any impact)": "Permits",
+                        "AU:BI:2:1:c2(if you can not quantify, or are not certain of, impact (in that you do not know what will happen))": "Grey",
+                        "AU:BI:2:1:c3(Evaluating the impact of your actions)": "Demands"
+                    },
+                    "AU:BI:2:2(Default)": {
+                        "References": {
+                            "Harkous": "The Curious Case of the PDF Converter That Likes Mozart",
+                            "Marczak": "Social Engineering Attacks on Government Opponents"
+                        },
+                        "note": "this applies also to helping someone with computer problems, and to making sure you know what you are doing",
+                        "AU:BI:2:2:c1(if you do not have any impact)": "Permits",
+                        "AU:BI:2:2:c2(if you can not quantify, or are not certain of, impact (in that you do not know what will happen))": "Grey",
+                        "AU:BI:2:2:c3(Evaluating the impact of your actions)": "Demands"
+                    }
+                },
+                "AU:BI:3(without permission of rightful owners or authorities (e.g. police warrant))": {
+                    "AU:BI:3:1(if the systems are being used for illegal activities by third parties)": {
+                        "AU:BI:3:1:c1(if you do not have any impact)": "Grey",
+                        "AU:BI:3:1:c2(if you can not quantify, or are not certain of, impact (in that you do not know what will happen))": "Prohibits",
+                        "AU:BI:3:1:c3(Evaluating the impact of your actions)": "Demands"
+                    },
+                    "AU:BI:3:c1(Default)": "Prohibits"
+                },
+                "AU:BI:c7(indirectly (e.g. through a botnet C2 server controlling victim nodes))": "Grey"
+            }
+        },
+        "HS(Computer, Human, and Animal Subjects Testing, REBs, IRBs)": {
+            "HS:DE(Deceiving human or animal test subjects)": {
+                "References": {
+                    "AHMPX5RX": "AHMPX5RX",
+                    "QAZCAHD5": "QAZCAHD5",
+                    "F84G4WXA": "F84G4WXA",
+                    "G4NCUJUV": "G4NCUJUV",
+                    "Park": "Scambaiter",
+                    "Schreiber": "To Befriend Or Not?",
+                    "Aycock": "Why 'No Worse Off' Is Worse Off"
+                },
+                "HS:DE:c1(Performing acts intended to deceive, encouraging, or entice others into connecting certain devices, tools, or networks to their own (e.g. phishing, scattering USBs, etc.))": "Grey",
+                "HS:DE:c2(Default)": "Prohibits",
+                "HS:DE:c3(Debriefing, performing exit interviews, or obtaining a waiver based on reducing harm from not debriefing)": "Demands"
+            },
+            "HS:ML(Misleading, false, or deceptive advertising)": {
+                "References": {
+                    "Park": "Scambaiter",
+                    "Japan Law": "Act against Unjustifiable Premiums and Misleading Representations",
+                    "US Law": "15 U.S. Code § 45c",
+                    "EU Law": "European Directive 2005/29"
+                },
+                "HS:ML:c1(Default)": "Prohibits",
+                "HS:ML:1((Japan law) if it does not misrepresent goods or services as much more favorable to general consumers than the actual one, in a way that will be misunderstood by and thereby induce the general consumer; and (US law) does not misrepresent the nature of the goods)": {
+                    "HS:ML:1:c1(If it encourages consumers (especially general ones) to buy something)": "Prohibits",
+                    "HS:ML:1:c2(Default)": "Permits"
+                },
+                "HS:ML:2(if the research is conducted to further computer security of the advertising platform or target)": {
+                    "HS:ML:2:c1(Default)": "Grey",
+                    "HS:ML:2:c2((US Law) if the research is conducted to further computer security of the online event ticket sales industry)": "Permits"
+                },
+                "HS:ML:c2((research paper) if an explicit policy exists to actually fulfill the advertisement's promise to the (EU law) average consumer or otherwise remedy harm (for example, in Japan there is a 3% administrative fine for sales from the misleading advertisement))": "Permits",
+                "HS:ML:3((US law) if the research involves misrepresenting 'marks' such as a domain name or trademark)": {
+                    "HS:ML:3:c1(if the use of the 'mark' involves a bad faith intent to profit from it)": "Prohibits",
+                    "HS:ML:3:c2(Default)": "Permits"
+                }
+            },
+            "HS:HP(Observing communications/data/activities of third parties)": {
+                "HS:HP:1(Recording activity/data received by your own systems, without receiving either consent or waived consent from the target)": {
+                    "HS:HP:1:1(if unsolicited)": {
+                        "HS:HP:1:1:c1(Systems deployed and monitored for the sole purpose of being accessed illegitimately by others)": "Permits",
+                        "HS:HP:1:1:1(Recording activity/traffic coming to your own devices)": {
+                            "References": {
+                                "Han": "PhishEye"
+                            },
+                            "HS:HP:1:1:1:c1(Default)": "Permits"
+                        },
+                        "HS:HP:1:1:2(Spam honeypots (advertising your email information, and recording received emails))": {
+                            "References": {
+                                "Park": "Scambaiter",
+                                "Liao": "Lurking Malice in the Cloud"
+                            },
+                            "HS:HP:1:1:2:c1(Default)": "Permits"
+                        }
+                    },
+                    "HS:HP:1:2(if solicited)": {
+                        "HS:HP:1:2:c1(Systems deployed and monitored for the sole purpose of being accessed illegitimately by others)": "Grey",
+                        "HS:HP:1:2:1(Recording activity/traffic coming to your own devices)": {
+                            "References": {
+                                "Han": "PhishEye"
+                            },
+                            "HS:HP:1:2:1:c1(Default)": "Prohibits"
+                        },
+                        "HS:HP:1:2:2(Spam honeypots (advertising your email information, and recording received emails))": {
+                            "References": {
+                                "Park": "Scambaiter",
+                                "Liao": "Lurking Malice in the Cloud"
+                            },
+                            "HS:HP:1:2:2:c1(Default)": "Grey"
+                        }
+                    }
+                },
+                "HS:HP:2(Allowing hackers to host malicious content or use your system to operate malware)": {
+                    "References": {
+                        "Han": "PhishEye"
+                    },
+                    "HS:HP:2:c1(Default)": "Grey",
+                    "HS:HP:2:c2(Ensuring there is no impact resulting from the use of your system)": "Demands"
+                }
+            },
+            "HS:CS(Criminal or Unethical Service Purchase or Participation )": {
+                "References": {
+                    "Yang": "The Ever-Changing Labyrinth",
+                    "WR32NB34": "WR32NB34",
+                    "ZRAC7H62": "ZRAC7H62"
+                },
+                "HS:CS:c1(Minimizing interaction with criminal/black market/illegal service providers or merchants)": "Grey",
+                "HS:CS:1(Purchasing black market products or services)": {
+                    "HS:CS:1:c1(If such an act increases demand, supply, or funding for a black market)": "Grey",
+                    "HS:CS:1:1(If they are directly linked to crime (even if the act of purchasing is not illegal))": {
+                        "HS:CS:1:1:c1(Getting police coordination (e.g. STING))": "Demands"
+                    },
+                    "HS:CS:1:c2(Having someone perform unethical activity (such as Blackhat SEO) on your behalf)": "Grey"
+                }
+            },
+            "HS:EB(Consulting with REB, IRB, etc.)": {
+                "References": {
+                    "Bianchi": "What the App Is That?",
+                    "Raber": "Privacy Wedges",
+                    "Gulyas": "Near-Optimal Fingerprinting with Constraints",
+                    "Diao": "No Pardon for the Interruption",
+                    "Shoshitaishvili": "Portrait of a Privacy Invasion",
+                    "Schreiber": "To Befriend Or Not?",
+                    "Lee": "You Are a Game Bot!"
+                },
+                "HS:EB:1(When doing direct human or animal testing)": {
+                    "References": {
+                        "Blythe": "Unpacking security policy compliance",
+                        "De Cristofaro": "An Exploratory Ethnographic Study of Issues and Concerns with Whole Genome Sequencing",
+                        "Grimm": "Survey on the Fate of Digital Footprints after Death",
+                        "Kaczmarek": "An Unattended Study of Users Performing Security Critical Tasks under Adversarial Noise",
+                        "Kirlappos": "Fixing Security Together",
+                        "Marczak": "Social Engineering Attacks on Government Opponents",
+                        "McGregor": "Individual versus Organizational Computer Security and Privacy Concerns in Journalism",
+                        "Neupane": "Neural Signatures of User-Centered Security",
+                        "Norcie": "Why Johnny Can’t Blow the Whistle",
+                        "Rashidi": "Understanding Saudis’ Privacy Concerns When Using WhatsApp",
+                        "Schechter": "Learning Assigned Secrets for Unlocking Mobile Devices",
+                        "Woodruff": "Would a Privacy Fundamentalist Sell Their DNA for $1000"
+                    },
+                    "HS:EB:1:c1(Consulting with an REB, IRB, etc. if available)": "Demands",
+                    "HS:EB:1:c2(If an official ethics committee is unavailable, consulting with qualified parties about ethical practices surrounding your research)": "Demands"
+                },
+                "HS:EB:2(Whenever it is not absolutely certain that humans or animals will not be involved in the research)": {
+                    "References": {
+                        "Lian": "Measuring the Practical Impact of DNSSEC Deployment",
+                        "Liu": "All Your DNS Records Point to Us",
+                        "Yang": "The Ever-Changing Labyrinth"
+                    },
+                    "HS:EB:2:c1(Consulting with an REB, IRB, etc. if available)": "Demands",
+                    "HS:EB:2:c2(If an official ethics committee is unavailable, consulting with qualified parties about ethical practices surrounding your research)": "Demands"
+                },
+                "HS:EB:c1(Adhering to REB/IRB rules but not to other rules in this benchmark)": "Prohibits"
+            },
+            "HS:EX(Experimental,survey, and interview subjects and their systems)": {
+                "References": {
+                    "ZGLABD7U": "ZGLABD7U",
+                    "F84G4WXA": "F84G4WXA",
+                    "QAZCAHD5": "QAZCAHD5",
+                    "U4VMQUWP": "U4VMQUWP",
+                    "G4NCUJUV": "G4NCUJUV",
+                    "JA8WXYD2": "JA8WXYD2",
+                    "X7FQFEE7": "X7FQFEE7",
+                    "ZQ9E7NAB": "ZQ9E7NAB",
+                    "Blythe": "Unpacking security policy compliance",
+                    "Canova": "NoPhish App Evaluation",
+                    "Grimm": "Survey on the Fate of Digital Footprints after Death",
+                    "Harkous": "The Curious Case of the PDF Converter That Likes Mozart",
+                    "Kaczmarek": "An Unattended Study of Users Performing Security Critical Tasks under Adversarial Noise",
+                    "Kirlappos": "Fixing Security Together",
+                    "Neupane": "Neural Signatures of User-Centered Security",
+                    "Leibenger": "Privacy Challenges in the Quantified Self Movement",
+                    "Marczak": "Social Engineering Attacks on Government Opponents",
+                    "McGregor": "Individual versus Organizational Computer Security and Privacy Concerns in Journalism",
+                    "Norcie": "Why Johnny Can’t Blow the Whistle",
+                    "Pu": "Towards a Model on the Factors Influencing Social App Users’ Valuation of Interdependent Privacy",
+                    "Rashidi": "Understanding Saudis’ Privacy Concerns When Using WhatsApp",
+                    "Rasmussen": "Authentication Using Pulse- Response Biometrics",
+                    "Sahin": "Over-The-Top Bypass",
+                    "Schechter": "Learning Assigned Secrets for Unlocking Mobile Devices",
+                    "Shubham": "Should I Protect You?",
+                    "Woodruff": "Would a Privacy Fundamentalist Sell Their DNA for $1000"
+                },
+                "HS:EX:c1(Recording or transcribing interviews with subjects without consent)": "Grey",
+                "HS:EX:c2(Requiring experiment participants to log into, install things onto, or otherwise employ their personal devices, accounts, or systems)": "Grey",
+                "HS:EX:c3(Testing before deployment for bugs, consistency, safety, etc. in software, hardware, and services that are to be used on experiment participants)": "Recommended",
+                "HS:EX:c4(Fairly compensate or pay subjects, including crowdsourced workers, for their contributions)": "Demands",
+                "HS:EX:c5(Anonymizing subjects to the researcher and in publications)": "Demands",
+                "HS:EX:c6(Subjecting participants to more than the minimum necessary burden, stress, condition, risk, etc.)": "Prohibits",
+                "HS:EX:c7(Equitably or (pseudo-) randomly assigning test conditions to subjects/users)": "Demands",
+                "HS:EX:c8((Pseudo) Randomly sampling user data obtained in bulk from scraping, databases, etc.)": "Recommended",
+                "HS:EX:c9(Minimizing invasive/sensitive situations, or giving subjects the option to instead do a less sensitive/invasive task)": "Demands",
+                "HS:EX:c10(Accounting for and respecting the culture, customs, and circumstances of subjects)": "Demands",
+                "HS:EX:c11(Procuring only from reputable vendors software, hardware, and services that will have an effect on experiment participants)": "Recommended",
+                "HS:EX:c12(Endangering or soliciting from experimental/survey/interview subjects anything that might cause them harm at the hands of researchers, criminals, state actors, themselves, or others)": "Prohibits"
+            }
+        },
+        "GR(General Rules)": {
+            "GR:TS(Violating terms of service (ToS), EULAs, etc.)": {
+                "References": {
+                    "Schreiber": "To Befriend Or Not?",
+                    "Nakibly": "Website-Targeted False Content Injection by Network Operators",
+                    "Shoshitaishvili": "Portrait of a Privacy Invasion",
+                    "Brookman": "Cross-Device Tracking"
+                },
+                "GR:TS:c1(which are themselves unethical)": "Permits",
+                "GR:TS:c2(Creating fake or pseudonymous accounts)": "Permits",
+                "GR:TS:c3(Default)": "Prohibits"
+            },
+            "GR:EC(Ethical consistency)": {
+                "GR:EC:1(Across Organizations and Persons)": {
+                    "GR:EC:1:c1(Having a separate ethical standard from a different country)": "Permits",
+                    "GR:EC:1:c2(Having a separate ethical standard across cyber security research organizations in the same country)": "Prohibits",
+                    "GR:EC:1:c3(Having a separate ethical standard between persons in the same organization)": "Prohibits"
+                },
+                "GR:EC:c1(Discussing ethically ambiguous actions falling under this benchmark (which are not otherwise prohibited) with a supervisory committee or IRB by default)": "Demands",
+                "GR:EC:c2(If research continues for an extended period, checking these rules periodically to ensure consistent application)": "Demands",
+                "GR:EC:2(Unintentionally violating one of these rules)": {
+                    "References": {
+                        "Liao": "Lurking Malice in the Cloud",
+                        "Biryukov": "Trawling for Tor Hidden Services",
+                        "Rossow": "SoK: P2PWNED"
+                    },
+                    "GR:EC:2:c1('Reasonable effort' clause: if harm is mitigated (GR:AC:1) and the violation was not negligent)": "Permits",
+                    "GR:EC:2:c2(Negligent behavior [e.g. not thoroughly evaluating research with this tree, but violating a rule without knowing it])": "Prohibits"
+                },
+                "GR:EC:3(An ethical authority supervising an experiment)": {
+                    "References": {
+                        "Nakibly": "Website-Targeted False Content Injection by Network Operators"
+                    },
+                    "GR:EC:3:c1(If the experiment might encounter one of the rules in this benchmark during or throughout the research (i.e. consistency cannot be proven prior to or post-research))": "Demands",
+                    "GR:EC:3:c2(Default)": "Permits"
+                }
+            },
+            "GR:DA(Documentation and Accountability)": {
+                "References": {
+                    "Corrigan-Gibbs": "Ethics of Internet Freedom Promotion",
+                    "Nakibly": "Website-Targeted False Content Injection by Network Operators",
+                    "Sullins": "A Case Study in Malware Research Ethics Education"
+                },
+                "GR:DA:1(a complete statement about the ethics of the research)": {
+                    "GR:DA:1:1(When planning or conducting research otherwise related to this benchmark, should be submitted prior to)": {
+                        "XOR": {
+                            "XOR": "A research authority, such as the head of an ethics committee, or even on a per-country basis, or else the maintainer of this benchmark, must select from one of the choices under and XOR node, to apply consistently in all cases.",
+                            "GR:DA:1:1:c1(submitting a research proposal)": "Demands",
+                            "GR:DA:1:1:c2(prior to commencing relevant actions)": "Demands",
+                            "GR:DA:1:1:c3(prior to completing relevant actions)": "Demands",
+                            "GR:DA:1:1:c4(prior to conducting relevant actions)": "Demands"
+                        }
+                    },
+                    "GR:DA:1:c1(specifically motivating the research as ethically necessary)": "Demands",
+                    "GR:DA:1:c2(if it appears consistent with this benchmark, ignoring the rest of the rules in this benchmark)": "Prohibits",
+                    "GR:DA:1:c3(Include potential impacts on all those affected by decisions made during design and implementation)": "Demands",
+                    "GR:DA:1:c4(Identify stakeholders and their stakes according to the Menlo Report C1)": "Demands",
+                    "GR:DA:1:c5(Identify benefits and potential harms from the research for all relevant stakeholders (see C3 of the Menlo Report))": "Demands",
+                    "GR:DA:1:c6(develop mitigation procedures and checklists, such as a contact list of parties to notify (See Menlo Report))": "Demands",
+                    "GR:DA:1:c7(identify laws, regulations, contracts, and other private agreements that are applicable to their research (See Menlo Report))": "Demands",
+                    "GR:DA:1:c8(clearly communicate the purposes of research (Menlo Report C.5.2))": "Demands",
+                    "GR:DA:1:c9(clearly communicate why data collection and/or direct interaction with ICT is required for research purposes (Menlo Report C.5.2))": "Demands",
+                    "GR:DA:1:c10(clearly communicate and how research results will be used (Menlo Report C.5.2))": "Demands"
+                }
+            },
+            "GR:AC(ACM Code of Ethics)": {
+                "GR:AC:1(Harm)": {
+                    "note": "'Harm' means means injury or negative consequences, including but not limited to undesirable loss of information, loss of property, property damage, or unwanted environmental impacts. (any amount)",
+                    "GR:AC:1:c1(gear efforts to meet social needs)": "Demands",
+                    "GR:AC:1:c2(be alert to, and make others aware of, any potential damage to the local or global environment)": "Demands",
+                    "GR:AC:1:1(Harmful actions)": {
+                        "note": [
+                            "e.g., toward users, the general public, employees, employers",
+                            "Harmful actions include intentional destruction or modification of files and programs leading to serious loss of resources or unnecessary expenditure of human resources such as the time and effort required to purge systems of computer viruses."
+                        ],
+                        "GR:AC:1:1:c1(Default)": "Prohibits"
+                    },
+                    "GR:AC:1:c3(undoing or mitigating unexpected or unintentional harm)": "Demands",
+                    "GR:AC:1:c4(Using formal software testing in cyber security research that involves networks, products, or others' systems)": "Demands",
+                    "GR:AC:1:2(Misrepresenting system features to users, coworkers, or supervisors)": {
+                        "GR:AC:1:2:c1(if no harm results)": "Permits",
+                        "GR:AC:1:2:c2(if harm results)": "Prohibits"
+                    },
+                    "GR:AC:1:3(Given signs of system dangers that might result in serious personal or social damage)": {
+                        "GR:AC:1:3:c1(Documenting and reporting)": "Demands",
+                        "GR:AC:1:3:1(If one's superiors do not act to curtail or mitigate possible dangers from research)": {
+                            "GR:AC:1:3:1:c1(thoroughly assessing the situation)": "Demands",
+                            "GR:AC:1:3:1:c2(reporting the situation to another authority or the public ('whistle-blowing'))": "Permits"
+                        },
+                        "GR:AC:1:3:2(When evaluating and reporting risk, disclosing circumstances that might lead to conflicts of interest)": {
+                            "note": "for example, with respect to funding, qualifications, obligations, relationships, employment, etc.",
+                            "GR:AC:1:3:2:c1(Default)": "Demands"
+                        }
+                    }
+                },
+                "GR:AC:2(Misrepresenting one's authority to any party)": {
+                    "GR:AC:2:c1(As a deceptive aspect of an experiment)": "Permits",
+                    "GR:AC:2:c2(Default)": "Prohibits"
+                },
+                "GR:AC:3(Discrimination)": {
+                    "note": [
+                        "e.g., such as when collecting data or recruiting participants",
+                        "See Menlo Report C3 as well"
+                    ],
+                    "GR:AC:3:c1(on the basis of race, sex, religion, age, disability, national origin, or other such factors)": "Prohibits",
+                    "GR:AC:3:c2(that is unintentional, unavoidable, or central to the research at hand (especially through inclusion rather than exclusion))": "Permits"
+                },
+                "GR:AC:4(Intellectual Property)": {
+                    "GR:AC:4:c1(Copying software without proper authorization, even if it is not protected)": "Prohibits",
+                    "GR:AC:4:c2(Violating laws or other contracts, such as Intellectual Property)": "Prohibits",
+                    "GR:AC:4:1(Taking credit for other's ideas or work)": {
+                        "note": [
+                            "for example, when citing, reusing code, etc.",
+                            "even if it is malware/a criminal's software"
+                        ],
+                        "GR:AC:4:1:c1(Default)": "Prohibits",
+                        "GR:AC:4:1:c2(not explicitly protected by copyright, patent, etc.)": "Prohibits",
+                        "GR:AC:4:1:c3(via reuse of work without attribution, under legal fair use principles)": "Permits"
+                    }
+                },
+                "GR:AC:5(Personal Information)": {
+                    "GR:AC:5:1(Rules similar to non-ACM ones)": {
+                        "GR:AC:5:1:c1(clearly defined and enforced retention and disposal periods)": "Demands",
+                        "GR:AC:5:1:1(Procedures that capture or monitor electronic user data (including electronic mail or messages) without the permission of users or bona fide authorization related to system operation and maintenance)": {
+                            "note": "does this apply to traffic received on your own system?",
+                            "GR:AC:5:1:1:c1(Default)": "Prohibits"
+                        }
+                    },
+                    "GR:AC:5:2(Disclosing data observed during the normal duties of system operation and maintenance)": {
+                        "GR:AC:5:2:c1(Default)": "Prohibits",
+                        "GR:AC:5:2:1(that is evidence for the violation of law, organizational regulations, or this Code)": {
+                            "GR:AC:5:2:1:c1(to the proper authorities)": "Permits",
+                            "GR:AC:5:2:1:c2(to anyone besides proper authorities)": "Prohibits"
+                        }
+                    },
+                    "GR:AC:5:3(Violating explicit/Implicit confidentiality agreements)": {
+                        "GR:AC:5:3:c1(such as when private information not directly related to the performance of one's duties becomes available)": "Prohibits",
+                        "GR:AC:5:3:c2(including those with 'employers, clients, and users')": "Prohibits",
+                        "GR:AC:5:3:c3(if discharged from such obligations by requirements of the law or other principles of this Code)": "Permits"
+                    }
+                }
+            },
+            "GR:MR(Menlo Report)": {
+                "GR:MR:1(Stakeholders)": {
+                    "GR:MR:1:c1(Identifying all stakeholders/stakes)": "Demands"
+                },
+                "GR:MR:2(Respect for Persons)": {
+                    "GR:MR:2:1(Informed consent)": {
+                        "note": "Between these and the rest of the guidelines there may be 1 or 2 repeats",
+                        "GR:MR:2:1:1(Default)": {
+                            "GR:MR:2:1:1:c1(that details the intended benefits of research activities and the risks to research subjects)": "Demands",
+                            "GR:MR:2:1:1:1(achieved through)": {
+                                "XOR": {
+                                    "XOR": "A research authority, such as the head of an ethics committee, or even on a per-country basis, or else the maintainer of this benchmark, must select from one of the choices under an XOR node, to apply consistently in all cases.",
+                                    "GR:MR:2:1:1:1:c1(a clearly written or verbalized consent conversation)": "Demands",
+                                    "GR:MR:2:1:1:1:c2(a clearly written consent document)": "Demands"
+                                },
+                                "GR:MR:2:1:1:1:c1(using a language level kept to 8th grade or lower)": "Demands"
+                            },
+                            "GR:MR:2:1:1:c2(leveraging intended benefits to coerce or entice consent from subjects)": "Prohibits",
+                            "GR:MR:2:1:1:c3(for one research purpose or use being used for other research purposes)": "Prohibits",
+                            "GR:MR:2:1:1:2(from an individual being used for other members of the group)": {
+                                "GR:MR:2:1:1:2:c1(Default)": "Prohibits",
+                                "GR:MR:2:1:1:2:1(In order to obtain blanket consent, working with 'a service provider who has direct contractual relationships with its network's users')": {
+                                    "GR:MR:2:1:1:2:1:c1(if it is equitable (see Menlo Report C4))": "Permits"
+                                }
+                            }
+                        },
+                        "GR:MR:2:1:2(When being granted a waiver by an ethical committee)": {
+                            "GR:MR:2:1:2:c1(if the research involves more than minimal risk to the subjects)": "Prohibits",
+                            "GR:MR:2:1:2:c2(if the waiver or alteration will adversely affect the rights and welfare of the subjects)": "Prohibits",
+                            "GR:MR:2:1:2:c3(if the research could practicably be carried out without the waiver or alteration)": "Prohibits",
+                            "GR:MR:2:1:2:c4(Post-hoc, notifying subjects)": "Demands",
+                            "GR:MR:2:1:2:c5(Whenever appropriate, providing subjects with additional pertinent information after participation)": "Demands",
+                            "GR:MR:2:1:2:1(If using existing/retrospective data for which consent cannot be obtained)": {
+                                "GR:MR:2:1:2:1:c1(Implementing data protections/removing identifying information that is not germane to research)": "Demands"
+                            }
+                        }
+                    },
+                    "GR:MR:2:2(Autonomy)": {
+                        "GR:MR:2:2:1(Data subjects directing the destruction of data about them)": {
+                            "References": {
+                                "Harkous": "The Curious Case of the PDF Converter That Likes Mozart"
+                            },
+                            "GR:MR:2:2:1:c1(always)": "Permits",
+                            "GR:MR:2:2:1:c2(in some cases)": "Demands"
+                        },
+                        "GR:MR:2:2:2(Debriefing data subjects of experiments post-hoc)": {
+                            "GR:MR:2:2:2:c1(if no waiver of notification has been obtained from an ethical committee)": "Demands",
+                            "GR:MR:2:2:2:c2(if a waiver of notification has been obtained from an ethical committee)": "Permits"
+                        }
+                    }
+                },
+                "GR:MR:3(Beneficence)": {
+                    "note": "see Menlo Report section C3 and the ACM Code of Ethics",
+                    "GR:MR:3:c1(Identifying potential harms from research actions)": "Demands",
+                    "GR:MR:3:c2(mitigating realized harms)": "Demands"
+                },
+                "GR:MR:4(Fairness and Equity)": {
+                    "note": "See Menlo Report C4",
+                    "GR:MR:4:c1(Bias/discrimination against persons)": "Prohibits",
+                    "GR:MR:4:c2(Equitably distributing risks and benefits amongst society and persons involved in research)": "Demands"
+                },
+                "GR:MR:5(Law and Public Interest)": {
+                    "GR:MR:5:1(Thoroughly researching and respecting laws/contract/etc. that apply to one's research)": {
+                        "note": [
+                            "these mainly include rules about:",
+                            "identity theft",
+                            "unsolicited bulk electronic mail",
+                            "privacy in electronic and wire communications",
+                            "notification of security breaches",
+                            "copyright and other intellectual property infringement",
+                            "data security and destruction",
+                            "child pornography",
+                            "spyware and phishing",
+                            "fraudulent deception",
+                            "financial privacy",
+                            "economic espionage",
+                            "constitutional privacy",
+                            "health information security and privacy",
+                            "industry standards and best practices",
+                            "and contractual privacy and acceptable use policies"
+                        ],
+                        "GR:MR:5:1:c1(Default)": "Demands"
+                    },
+                    "GR:MR:5:2(Accountability)": {
+                        "note": "See Menlo report C.5.2 and C.4 for details of how to decide if/when/what to share/keep",
+                        "GR:MR:5:2:1(research methodology, ethical evaluations, data collected, and results generated)": {
+                            "GR:MR:5:2:1:1(according to the Beneficence guidelines)": {
+                                "GR:MR:5:2:1:1:c1(be documented)": "Demands",
+                                "GR:MR:5:2:1:1:c2(be made available responsibly)": "Demands"
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

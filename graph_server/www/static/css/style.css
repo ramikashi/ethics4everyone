@@ -1,0 +1,59 @@
+body {
+  font-family: helvetica;
+  font-size: 14px;
+}
+
+#cy {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 80;
+  z-index: 999;
+}
+
+h1 {
+  opacity: 0.5;
+  font-size: 1em;
+  display: inline-block;
+  
+      /* ie 7*/ 
+    *display: inline;
+    *zoom: 1;
+    *text-align: left; 
+}
+.header {
+     
+    text-align: justify;
+     /* IE special */  
+    width: 100%;  
+    -ms-text-justify: distribute-all-lines;
+    text-justify: distribute-all-lines;
+}
+ .header:after{
+    content: '';
+    display: inline-block;
+    width: 100%;
+    height: 0;
+    font-size:0;
+    line-height:0;
+}
+
+.nav {
+    display: inline-block;
+    
+    /* ie 7*/
+    *display: inline;
+    *zoom:1;
+    *text-align: right;
+}
+
+#version {
+    display: inline-block;
+    vertical-align: baseline; 
+    
+    /* ie 7*/
+    *display: inline;
+    *zoom:1;
+    *text-align: right;
+}
