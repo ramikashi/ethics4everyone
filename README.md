@@ -12,6 +12,8 @@ https://www.usenix.org/system/files/soups2020_poster_ramirez.pdf
 
 https://arxiv.org/ftp/arxiv/papers/2011/2011.13925.pdf （日本語）
 
+In this work we propose a decision-tree-style user interface for a knowledge base of ethics practices sourced from top cyber security conference papers mentioning ethics. Papers were sampled semi-randomly by topic, and vetted against standards like the Menlo Report and the ACM Code of Ethics, while also taking the papers themselves, being peer-reviewed, as votes for the practices they describe or leave out.
+
 This research was originally conducted at Secom IS Laboratory:
 
 https://www.secom.co.jp/isl/en/research/ethics/
@@ -26,6 +28,20 @@ The current master database is stored in master-benchmark_updated_translated_v0.
 
 The database contains both the Japanese and the English versions of the tree.
 The first column is Japanese, and the second is English. The third (and beyond) is for notes.
+
+Tree Overview and Operation:
+
+https://user-images.githubusercontent.com/83337379/147711759-6784a9dc-7f6f-42ce-871b-074e2f58f189.mp4
+
+Deontic Logic-based Leaf Nodes (i.e. decisions/recommendations):
+
+https://user-images.githubusercontent.com/83337379/147711797-0ca62c2b-695d-4428-9c29-cfe47bb444ce.mp4
+
+Subtree samples:
+
+https://user-images.githubusercontent.com/83337379/147712010-87284e94-9606-494c-a62d-3a582b7bb710.mp4
+
+
 
 xlsx_to_json.py is used to convert the csv knowledge base to JSONs
 
